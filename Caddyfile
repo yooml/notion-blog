@@ -1,0 +1,76 @@
+localhost:8080
+root netlify_static
+errors stdout
+log stdout
+
+rewrite / {
+	r  ^/article/(.*)/.*$
+	to /article/{1}.html
+}
+
+redir "/index.html" "/" 302
+redir "/blog" "/" 302
+redir "/blog/" "/" 302
+redir "/kb/serialization-in-c#.html" "/article/Serialization-in-C.html" 302
+redir "/extremeoptimizations" "/extremeoptimizations/index.html" 302
+redir "/extremeoptimizations/" "/extremeoptimizations/index.html" 302
+redir "/feed/rss2/atom.xml" "/atom.xml" 302
+redir "/feed/rss2/" "/atom.xml" 302
+redir "/feed/rss2" "/atom.xml" 302
+redir "/feed/" "/atom.xml" 302
+redir "/feed" "/atom.xml" 302
+redir "/feedburner.xml" "/atom.xml" 302
+redir "/articles/cocoa-objectivec-reference.html" "/articles/cocoa-reference.html" 302
+redir "/forum_sumatra" "https://forum.sumatrapdfreader.org/" 302
+redir "/google6dba371684d43cd6.html" "/static/google6dba371684d43cd6.html" 302
+redir "/software/15minutes/index.html" "/software/15minutes.html" 302
+redir "/software/15minutes/" "/software/15minutes.html" 302
+redir "/software/fofou" "/software/fofou/index.html" 302
+redir "/software/dbhero" "/software/dbhero/index.html" 302
+redir "/software/patheditor" "/software/patheditor/for-windows.html" 302
+redir "/software/patheditor/" "/software/patheditor/for-windows.html" 302
+redir "/software/scdiff/" "/software/scdiff.html" 302
+redir "/software/scdiff/index.html" "/software/scdiff.html" 302
+redir "/software/sumatra" "https://www.sumatrapdfreader.org/free-pdf-reader.html" 302
+redir "/software/sumatrapdf" "https://www.sumatrapdfreader.org/free-pdf-reader.html" 302
+redir "/software/sumatrapdf/" "https://www.sumatrapdfreader.org/free-pdf-reader.html" 302
+redir "/software/sumatrapdf/index.html" "https://www.sumatrapdfreader.org/free-pdf-reader.html" 302
+redir "/software/sumatrapdf/download.html" "https://www.sumatrapdfreader.org/download-free-pdf-viewer.html" 302
+redir "/software/sumatrapdf/prerelase.html" "https://www.sumatrapdfreader.org/prerelease.html" 302
+redir "/free-pdf-reader.html" "https://www.sumatrapdfreader.org/free-pdf-reader.html" 302
+redir "/software/volante" "/software/volante/database.html" 302
+redir "/software/volante/" "/software/volante/database.html" 302
+redir "/software/volante/index.html" "/software/volante/database.html" 302
+redir "/software/fotofi" "/software/fotofi/free-stock-photos.html" 302
+redir "/software/fotofi/" "/software/fotofi/free-stock-photos.html" 302
+redir "/software/fotofi/index.html" "/software/fotofi/free-stock-photos.html" 302
+redir "/software/fast-file-finder-for-windows" "/software/fast-file-finder-for-windows/" 302
+redir "/software/fast-file-finder-for-windows/index.html" "/software/fast-file-finder-for-windows/" 302
+redir "/static/software.html" "/software/index.html" 302
+redir "/static/krzysztof.html" "/resume.html" 302
+redir "/static/resume.html" "/resume.html" 302
+
+rewrite "^/favicon.ico$" {
+    to /static/favicon.ico
+}
+
+rewrite "/software/sumatrapdf" {
+    regexp (.*)
+    to https://www.sumatrapdfreader.org/{1}
+}
+redir "/articles/" "/documents.html" 302
+redir "/articles/index.html" "/documents.html" 302
+redir "/static/documents.html" "/documents.html" 302
+redir "/software/index.html" "/software/" 302
+
+rewrite "^/articles/go-cookbook.html$" {
+    to /book/go-cookbook.html
+}
+
+rewrite "^/articles/go-cookbook.html$" {
+    to /book/go-cookbook.html
+}
+
+rewrite "^/tools/generate-unique-id$" {
+    to /tools/generate-unique-id.html
+}

@@ -1,0 +1,863 @@
+1102 1571277323394 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+      "table": "block"
+    }
+  ]
+}
+Response:+903
+{
+  "results": [
+    {
+      "role": "editor",
+      "value": {
+        "alive": true,
+        "collection_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+        "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+        "created_time": 1571276516677,
+        "id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+        "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+        "last_edited_time": 1571277300000,
+        "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+        "parent_table": "space",
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "space_permission"
+          },
+          {
+            "role": "comment_only",
+            "type": "public_permission"
+          }
+        ],
+        "type": "collection_view_page",
+        "version": 17,
+        "view_ids": [
+          "15e645e3-9186-4b59-b589-6aca08cfb2b6"
+        ]
+      }
+    }
+  ]
+}
+7760 1571277323394 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+  "verticalColumns": false
+}
+Response:+7520
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "26d26ac9-87d6-410c-befe-7d46c431fb92": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "collection_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276516677,
+          "id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571277300000,
+          "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "parent_table": "space",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "space_permission"
+            },
+            {
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "type": "collection_view_page",
+          "version": 17,
+          "view_ids": [
+            "15e645e3-9186-4b59-b589-6aca08cfb2b6"
+          ]
+        }
+      }
+    },
+    "collection": {
+      "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "name": [
+            [
+              "board"
+            ]
+          ],
+          "parent_id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "parent_table": "block",
+          "schema": {
+            "SW))": {
+              "name": "Status",
+              "options": [
+                {
+                  "color": "red",
+                  "id": "1",
+                  "value": "own"
+                },
+                {
+                  "color": "yellow",
+                  "id": "2",
+                  "value": "In Progress"
+                },
+                {
+                  "color": "green",
+                  "id": "3",
+                  "value": "Completed"
+                }
+              ],
+              "type": "select"
+            },
+            "b5a7698c-0fbd-42bc-996d-5884a8c45766": {
+              "name": "Tags",
+              "options": [
+                {
+                  "color": "red",
+                  "id": "075a29ef-ed38-4102-b259-47b4c103cb57",
+                  "value": "Important"
+                },
+                {
+                  "color": "default",
+                  "id": "0c37afd2-c272-4671-bed5-9829b931598f",
+                  "value": "2019.10"
+                },
+                {
+                  "color": "orange",
+                  "id": "5d68ad99-c984-45a8-85f5-8f6bccaf4121",
+                  "value": "notion"
+                },
+                {
+                  "color": "yellow",
+                  "id": "629c2b71-bebb-4589-b30b-b641e29d8596",
+                  "value": "编码"
+                },
+                {
+                  "color": "blue",
+                  "id": "2f94a55b-5836-48b9-a64e-f812b3e10f09",
+                  "value": "youdao"
+                },
+                {
+                  "color": "blue",
+                  "id": "37403cf2-5d99-4238-a8a9-91bcfb9124e8",
+                  "value": "ss"
+                }
+              ],
+              "type": "multi_select"
+            },
+            "s7a]": {
+              "name": "Assign",
+              "type": "person"
+            },
+            "title": {
+              "name": "Name",
+              "type": "title"
+            }
+          },
+          "template_pages": [
+            "333039c1-e52e-41d1-b656-b0fd8b5660a0",
+            "eb02fa4f-b34b-4ba7-8eed-708efebe85e8"
+          ],
+          "version": 12
+        }
+      }
+    },
+    "collection_view": {
+      "15e645e3-9186-4b59-b589-6aca08cfb2b6": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "format": {
+            "board_groups": [
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "own"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "In Progress"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "Completed"
+              }
+            ],
+            "board_properties": [
+              {
+                "property": "SW))",
+                "visible": false
+              },
+              {
+                "property": "s7a]",
+                "visible": true
+              }
+            ]
+          },
+          "id": "15e645e3-9186-4b59-b589-6aca08cfb2b6",
+          "name": "Board View",
+          "page_sort": [
+            "7d043762-7b39-4bb3-9e9f-22876b668365",
+            "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+            "282a2848-26c3-4cbc-aaca-e5e90595531b",
+            "29657de9-062d-412e-a687-3e3cdd0f971d",
+            "57579558-3402-465a-8a2e-d372c94f9388"
+          ],
+          "parent_id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "parent_table": "block",
+          "query": {
+            "aggregate": [
+              {
+                "aggregation_type": "count",
+                "id": "count",
+                "type": "title",
+                "view_type": "board"
+              }
+            ],
+            "group_by": "SW))"
+          },
+          "type": "board",
+          "version": 5
+        }
+      }
+    },
+    "notion_user": {
+      "7021cba6-c816-4eb3-b5b4-4fdd150aca5b": {
+        "role": "editor",
+        "value": {
+          "email": "947801604@qq.com",
+          "family_name": "yu",
+          "given_name": "menglei",
+          "id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "version": 9
+        }
+      }
+    },
+    "space": {
+      "ea3a90e6-3493-4d63-aa83-169b3e695693": {
+        "role": "editor",
+        "value": {
+          "beta_enabled": false,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570600920000,
+          "domain": "ymlll",
+          "id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276640000,
+          "name": "ymlll",
+          "pages": [
+            "c4feb01a-d93e-4b37-8870-beaddc7841db",
+            "23b5c9c6-ab5f-4c8f-8b8c-cb1ab84799b3",
+            "26d26ac9-87d6-410c-befe-7d46c431fb92",
+            "c4c5137a-3ae7-43b5-80d4-facb13705c8c",
+            "7e38611d-fb83-43c0-9f14-da68a1757728",
+            "29253221-a591-41de-826d-b45fad7dd376",
+            "04e8f9b5-40a7-46ae-9429-37393b566515",
+            "cf7b1a37-66ea-499a-90e5-68028152b10a"
+          ],
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "93b0076c-9156-4b75-9185-2d346e18553d"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "300f6910-3543-4d76-819e-9e2d792f3331"
+            }
+          ],
+          "version": 44
+        }
+      }
+    }
+  }
+}
+17732 1571277323395 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/queryCollection
+Body:+566
+{
+  "collectionId": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+  "collectionViewId": "15e645e3-9186-4b59-b589-6aca08cfb2b6",
+  "loader": {
+    "limit": 256,
+    "loadContentCover": true,
+    "type": "table",
+    "userLocale": "",
+    "userTimeZone": ""
+  },
+  "query": {
+    "aggregate": [
+      {
+        "aggregation_type": "count",
+        "id": "count",
+        "property": "",
+        "type": "title",
+        "view_type": "board"
+      }
+    ],
+    "calendar_by": null,
+    "filter": null,
+    "filter_operator": "",
+    "group_by": "SW))",
+    "sort": null
+  }
+}
+Response:+17075
+{
+  "recordMap": {
+    "block": {
+      "086ef6cf-e1e9-459c-9ec1-550a1ad9b263": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "copied_from": "25dc3406-42e4-4473-8145-27a723500a9f",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276667683,
+          "format": {
+            "bookmark_cover": "https://avatars3.githubusercontent.com/u/3006190?s=400\u0026v=4",
+            "bookmark_icon": "https://github.githubassets.com/favicon.ico"
+          },
+          "id": "086ef6cf-e1e9-459c-9ec1-550a1ad9b263",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276667683,
+          "parent_id": "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+          "parent_table": "block",
+          "properties": {
+            "caption": [
+              [
+                "此解析以官方demo的go-shadowsocks2 -s 'ss://AEAD_CHACHA20_POLY1305:your-password@:8488' -verbose为线索，AEAD_CHACHA20_POLY1305表示加密的算法为Chacha20Poly1305"
+              ]
+            ],
+            "description": [
+              [
+                "A fresh implementation of Shadowsocks in Go. GoDoc at https://godoc.org/github.com/shadowsocks/go-shadowsocks2/ Pre-built binaries for common platforms are available at https://github.com/shadowsocks/go-shadowsocks2/releases Install from source go get -u -v github.com/shadowsocks/go-shadowsocks2 Start a server listening on port 8488 using AEAD_CHACHA20_POLY1305 AEAD cipher with password your-password. go-shadowsocks2 -s 'ss://AEAD_CHACHA20_POLY1305:your-password@:8488' -verbose Start a client connecting to the above server."
+              ]
+            ],
+            "link": [
+              [
+                "https://github.com/shadowsocks/go-shadowsocks2"
+              ]
+            ],
+            "title": [
+              [
+                "shadowsocks/go-shadowsocks2"
+              ]
+            ]
+          },
+          "type": "bookmark",
+          "version": 1
+        }
+      },
+      "26d26ac9-87d6-410c-befe-7d46c431fb92": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "collection_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276516677,
+          "id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571277300000,
+          "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "parent_table": "space",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "space_permission"
+            },
+            {
+              "role": "comment_only",
+              "type": "public_permission"
+            }
+          ],
+          "type": "collection_view_page",
+          "version": 17,
+          "view_ids": [
+            "15e645e3-9186-4b59-b589-6aca08cfb2b6"
+          ]
+        }
+      },
+      "282a2848-26c3-4cbc-aaca-e5e90595531b": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276516677,
+          "id": "282a2848-26c3-4cbc-aaca-e5e90595531b",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276460000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "properties": {
+            "title": [
+              [
+                "Card 1"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "29657de9-062d-412e-a687-3e3cdd0f971d": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276516678,
+          "id": "29657de9-062d-412e-a687-3e3cdd0f971d",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276460000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "properties": {
+            "title": [
+              [
+                "Card 2"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "3221ea4f-7503-4f7d-ab1e-942fb784f07e": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "1db107be-5145-440e-a086-f44518bf0dc4",
+            "18801208-c44f-42db-b4fc-5b1cd5f1151f",
+            "6abc0ff8-d095-47b0-a6f3-5dca3f947422",
+            "eac025e4-b254-45f6-82a7-512bdd6558d2",
+            "075ce059-2ec6-46c7-8807-6ca3f7635cdb",
+            "c1c06140-d18d-4228-a794-ed464a8cb287",
+            "1d5edd49-839f-4a44-aab6-0eec6c29b391",
+            "e32995d3-0bec-41ca-9fc2-2e847afea58c",
+            "aed4120f-97c7-46e2-9aef-af5d5bd274a0",
+            "06362092-f5ef-4d3a-8dfc-a1922cfb2958",
+            "6157079f-8160-4513-b64f-a75bba230dfe",
+            "de045021-3b22-4c92-896d-b631ae723887",
+            "b84bea00-30c4-4bd7-a3f3-bcf092df6e97"
+          ],
+          "copied_from": "d20ad89d-2119-4da4-8036-ef2c4be2455c",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276667683,
+          "id": "3221ea4f-7503-4f7d-ab1e-942fb784f07e",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276667683,
+          "parent_id": "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "md5"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1
+        }
+      },
+      "53b6db35-eff6-49f1-94b3-d9df04dff78b": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "ad38760d-571c-4c1b-b1c9-26e78e68a346",
+            "19eb45dd-f400-4582-93df-f4f79de3d063",
+            "895dcb19-e419-4008-97f6-9e4873489661",
+            "bd0bc611-2651-41ed-b83a-ca9ae599d3c4",
+            "2ab670e9-6115-422f-b82c-b2ae593ac018",
+            "c587beb5-eb56-4b5b-b6ab-b10b9cad2f58",
+            "484f48ac-e0c3-4648-aecb-ae318def2622",
+            "4b57eaa8-3651-4e6e-bcb5-1df173b6bec4",
+            "7f0033b1-f1be-48a8-a9a0-bf71b340a3f8",
+            "a7255fb9-5424-4c68-acb7-ddd66c56bed9",
+            "8439cf5f-5d2f-4681-8e10-67d5360c33e9",
+            "61bf6f9a-6623-476f-8600-341aa1a42d32"
+          ],
+          "copied_from": "521491cc-ecd5-4f77-a1bd-4b2c5b64ce0c",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276667683,
+          "id": "53b6db35-eff6-49f1-94b3-d9df04dff78b",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276667683,
+          "parent_id": "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "net"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 1
+        }
+      },
+      "57579558-3402-465a-8a2e-d372c94f9388": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276516678,
+          "id": "57579558-3402-465a-8a2e-d372c94f9388",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276460000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "properties": {
+            "title": [
+              [
+                "Card 3"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 4
+        }
+      },
+      "6ad8571e-8746-4c1a-9a9a-56e11f225e9c": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "086ef6cf-e1e9-459c-9ec1-550a1ad9b263",
+            "3221ea4f-7503-4f7d-ab1e-942fb784f07e",
+            "53b6db35-eff6-49f1-94b3-d9df04dff78b"
+          ],
+          "copied_from": "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276667683,
+          "id": "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276640000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "properties": {
+            "SW))": [
+              [
+                "own"
+              ]
+            ],
+            "b5a7698c-0fbd-42bc-996d-5884a8c45766": [
+              [
+                "youdao,ss"
+              ]
+            ],
+            "title": [
+              [
+                "Copy of "
+              ],
+              [
+                "ss"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 15
+        }
+      },
+      "7d043762-7b39-4bb3-9e9f-22876b668365": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276580000,
+          "id": "7d043762-7b39-4bb3-9e9f-22876b668365",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276580000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "properties": {
+            "SW))": [
+              [
+                "own"
+              ]
+            ],
+            "title": [
+              [
+                "ss"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 9
+        }
+      },
+      "be76e41c-5cf8-4b51-825c-a41c06469f8f": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276520000,
+          "id": "be76e41c-5cf8-4b51-825c-a41c06469f8f",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276520000,
+          "parent_id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "parent_table": "collection",
+          "type": "page",
+          "version": 6
+        }
+      }
+    },
+    "collection": {
+      "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "74ed2cc0-3bdd-4ad6-99ae-16afcd0b9649",
+          "name": [
+            [
+              "board"
+            ]
+          ],
+          "parent_id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "parent_table": "block",
+          "schema": {
+            "SW))": {
+              "name": "Status",
+              "options": [
+                {
+                  "color": "red",
+                  "id": "1",
+                  "value": "own"
+                },
+                {
+                  "color": "yellow",
+                  "id": "2",
+                  "value": "In Progress"
+                },
+                {
+                  "color": "green",
+                  "id": "3",
+                  "value": "Completed"
+                }
+              ],
+              "type": "select"
+            },
+            "b5a7698c-0fbd-42bc-996d-5884a8c45766": {
+              "name": "Tags",
+              "options": [
+                {
+                  "color": "red",
+                  "id": "075a29ef-ed38-4102-b259-47b4c103cb57",
+                  "value": "Important"
+                },
+                {
+                  "color": "default",
+                  "id": "0c37afd2-c272-4671-bed5-9829b931598f",
+                  "value": "2019.10"
+                },
+                {
+                  "color": "orange",
+                  "id": "5d68ad99-c984-45a8-85f5-8f6bccaf4121",
+                  "value": "notion"
+                },
+                {
+                  "color": "yellow",
+                  "id": "629c2b71-bebb-4589-b30b-b641e29d8596",
+                  "value": "编码"
+                },
+                {
+                  "color": "blue",
+                  "id": "2f94a55b-5836-48b9-a64e-f812b3e10f09",
+                  "value": "youdao"
+                },
+                {
+                  "color": "blue",
+                  "id": "37403cf2-5d99-4238-a8a9-91bcfb9124e8",
+                  "value": "ss"
+                }
+              ],
+              "type": "multi_select"
+            },
+            "s7a]": {
+              "name": "Assign",
+              "type": "person"
+            },
+            "title": {
+              "name": "Name",
+              "type": "title"
+            }
+          },
+          "template_pages": [
+            "333039c1-e52e-41d1-b656-b0fd8b5660a0",
+            "eb02fa4f-b34b-4ba7-8eed-708efebe85e8"
+          ],
+          "version": 12
+        }
+      }
+    },
+    "collection_view": {
+      "15e645e3-9186-4b59-b589-6aca08cfb2b6": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "format": {
+            "board_groups": [
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "own"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "In Progress"
+              },
+              {
+                "hidden": false,
+                "property": "SW))",
+                "type": "select",
+                "value": "Completed"
+              }
+            ],
+            "board_properties": [
+              {
+                "property": "SW))",
+                "visible": false
+              },
+              {
+                "property": "s7a]",
+                "visible": true
+              }
+            ]
+          },
+          "id": "15e645e3-9186-4b59-b589-6aca08cfb2b6",
+          "name": "Board View",
+          "page_sort": [
+            "7d043762-7b39-4bb3-9e9f-22876b668365",
+            "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+            "282a2848-26c3-4cbc-aaca-e5e90595531b",
+            "29657de9-062d-412e-a687-3e3cdd0f971d",
+            "57579558-3402-465a-8a2e-d372c94f9388"
+          ],
+          "parent_id": "26d26ac9-87d6-410c-befe-7d46c431fb92",
+          "parent_table": "block",
+          "query": {
+            "aggregate": [
+              {
+                "aggregation_type": "count",
+                "id": "count",
+                "type": "title",
+                "view_type": "board"
+              }
+            ],
+            "group_by": "SW))"
+          },
+          "type": "board",
+          "version": 5
+        }
+      }
+    },
+    "space": {
+      "ea3a90e6-3493-4d63-aa83-169b3e695693": {
+        "role": "editor",
+        "value": {
+          "beta_enabled": false,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570600920000,
+          "domain": "ymlll",
+          "id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276640000,
+          "name": "ymlll",
+          "pages": [
+            "c4feb01a-d93e-4b37-8870-beaddc7841db",
+            "23b5c9c6-ab5f-4c8f-8b8c-cb1ab84799b3",
+            "26d26ac9-87d6-410c-befe-7d46c431fb92",
+            "c4c5137a-3ae7-43b5-80d4-facb13705c8c",
+            "7e38611d-fb83-43c0-9f14-da68a1757728",
+            "29253221-a591-41de-826d-b45fad7dd376",
+            "04e8f9b5-40a7-46ae-9429-37393b566515",
+            "cf7b1a37-66ea-499a-90e5-68028152b10a"
+          ],
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "93b0076c-9156-4b75-9185-2d346e18553d"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "300f6910-3543-4d76-819e-9e2d792f3331"
+            }
+          ],
+          "version": 44
+        }
+      }
+    }
+  },
+  "result": {
+    "aggregationResults": [
+      {
+        "id": "count",
+        "value": 0
+      }
+    ],
+    "blockIds": [
+      "7d043762-7b39-4bb3-9e9f-22876b668365",
+      "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
+      "282a2848-26c3-4cbc-aaca-e5e90595531b",
+      "29657de9-062d-412e-a687-3e3cdd0f971d",
+      "57579558-3402-465a-8a2e-d372c94f9388",
+      "be76e41c-5cf8-4b51-825c-a41c06469f8f"
+    ],
+    "total": 6,
+    "type": "table"
+  }
+}

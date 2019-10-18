@@ -1,0 +1,477 @@
+871 1571021753295 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/getRecordValues
+Body:+110
+{
+  "requests": [
+    {
+      "id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+      "table": "block"
+    }
+  ]
+}
+Response:+672
+{
+  "results": [
+    {
+      "role": "editor",
+      "value": {
+        "alive": true,
+        "collection_id": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+        "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+        "created_time": 1570612587796,
+        "id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+        "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+        "last_edited_time": 1570612560000,
+        "parent_id": "62578540-f664-492d-a597-531124552a81",
+        "parent_table": "block",
+        "type": "collection_view_page",
+        "version": 5,
+        "view_ids": [
+          "d4183c9b-89c5-4a69-9920-19fa6134dace"
+        ]
+      }
+    }
+  ]
+}
+6562 1571021753295 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/loadPageChunk
+Body:+152
+{
+  "chunkNumber": 0,
+  "cursor": {
+    "stack": []
+  },
+  "limit": 50,
+  "pageId": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+  "verticalColumns": false
+}
+Response:+6322
+{
+  "cursor": {
+    "stack": []
+  },
+  "recordMap": {
+    "block": {
+      "0f1eface-c8db-486b-b3b5-57521a4b48cf": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "collection_id": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570612587796,
+          "id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570612560000,
+          "parent_id": "62578540-f664-492d-a597-531124552a81",
+          "parent_table": "block",
+          "type": "collection_view_page",
+          "version": 5,
+          "view_ids": [
+            "d4183c9b-89c5-4a69-9920-19fa6134dace"
+          ]
+        }
+      },
+      "62578540-f664-492d-a597-531124552a81": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "9bafa43a-916f-4602-9712-c850580966ed",
+            "efdcd8fa-44dd-4510-bac2-8147a7b699c5",
+            "45f66710-35f0-42a5-b252-94d31464f3cf",
+            "696ddb49-768e-44d0-bb53-918a4830030e",
+            "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+            "8d4a4824-2579-4224-b6d3-4c9f9d5332ac"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570612020000,
+          "id": "62578540-f664-492d-a597-531124552a81",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570776900000,
+          "parent_id": "7e38611d-fb83-43c0-9f14-da68a1757728",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "space_permission"
+            },
+            {
+              "role": "reader",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "实验"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 59
+        }
+      },
+      "7e38611d-fb83-43c0-9f14-da68a1757728": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "05c3195f-e879-4d26-8f2c-600000ed5f35",
+            "62578540-f664-492d-a597-531124552a81"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570611780000,
+          "format": {
+            "page_icon": "🥉"
+          },
+          "id": "7e38611d-fb83-43c0-9f14-da68a1757728",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570612800000,
+          "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "parent_table": "space",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "测试"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 15
+        }
+      }
+    },
+    "collection": {
+      "f1bdb2bf-7906-4fe2-851c-9ceab8988686": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+          "parent_id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "parent_table": "block",
+          "schema": {
+            "H'fI": {
+              "name": "Tags",
+              "type": "multi_select"
+            },
+            "[4hM": {
+              "name": "Date",
+              "type": "date"
+            },
+            "title": {
+              "name": "Name",
+              "type": "title"
+            }
+          },
+          "version": 1
+        }
+      }
+    },
+    "collection_view": {
+      "d4183c9b-89c5-4a69-9920-19fa6134dace": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "d4183c9b-89c5-4a69-9920-19fa6134dace",
+          "name": "Calendar View",
+          "parent_id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "parent_table": "block",
+          "query": {
+            "calendar_by": "[4hM"
+          },
+          "type": "calendar",
+          "version": 1
+        }
+      }
+    },
+    "notion_user": {
+      "7021cba6-c816-4eb3-b5b4-4fdd150aca5b": {
+        "role": "editor",
+        "value": {
+          "email": "947801604@qq.com",
+          "family_name": "yu",
+          "given_name": "menglei",
+          "id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "mobile_onboarding_completed": true,
+          "onboarding_completed": true,
+          "version": 9
+        }
+      }
+    },
+    "space": {
+      "ea3a90e6-3493-4d63-aa83-169b3e695693": {
+        "role": "editor",
+        "value": {
+          "beta_enabled": false,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570600920000,
+          "domain": "ymlll",
+          "id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571021340000,
+          "name": "ymlll",
+          "pages": [
+            "c4c5137a-3ae7-43b5-80d4-facb13705c8c",
+            "7e38611d-fb83-43c0-9f14-da68a1757728",
+            "29253221-a591-41de-826d-b45fad7dd376",
+            "04e8f9b5-40a7-46ae-9429-37393b566515",
+            "cf7b1a37-66ea-499a-90e5-68028152b10a",
+            "41c92489-7918-4e24-926e-e28d5e48dc86"
+          ],
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "93b0076c-9156-4b75-9185-2d346e18553d"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "300f6910-3543-4d76-819e-9e2d792f3331"
+            }
+          ],
+          "version": 31
+        }
+      }
+    }
+  }
+}
+6481 1571021753295 httpcache-v1
+Method: POST
+URL: https://www.notion.so/api/v3/queryCollection
+Body:+409
+{
+  "collectionId": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+  "collectionViewId": "d4183c9b-89c5-4a69-9920-19fa6134dace",
+  "loader": {
+    "limit": 256,
+    "loadContentCover": true,
+    "type": "table",
+    "userLocale": "",
+    "userTimeZone": ""
+  },
+  "query": {
+    "aggregate": null,
+    "calendar_by": "[4hM",
+    "filter": null,
+    "filter_operator": "",
+    "group_by": null,
+    "sort": null
+  }
+}
+Response:+5982
+{
+  "recordMap": {
+    "block": {
+      "0f1eface-c8db-486b-b3b5-57521a4b48cf": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "collection_id": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570612587796,
+          "id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570612560000,
+          "parent_id": "62578540-f664-492d-a597-531124552a81",
+          "parent_table": "block",
+          "type": "collection_view_page",
+          "version": 5,
+          "view_ids": [
+            "d4183c9b-89c5-4a69-9920-19fa6134dace"
+          ]
+        }
+      },
+      "62578540-f664-492d-a597-531124552a81": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "9bafa43a-916f-4602-9712-c850580966ed",
+            "efdcd8fa-44dd-4510-bac2-8147a7b699c5",
+            "45f66710-35f0-42a5-b252-94d31464f3cf",
+            "696ddb49-768e-44d0-bb53-918a4830030e",
+            "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+            "8d4a4824-2579-4224-b6d3-4c9f9d5332ac"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570612020000,
+          "id": "62578540-f664-492d-a597-531124552a81",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570776900000,
+          "parent_id": "7e38611d-fb83-43c0-9f14-da68a1757728",
+          "parent_table": "block",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "space_permission"
+            },
+            {
+              "role": "reader",
+              "type": "public_permission"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "实验"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 59
+        }
+      },
+      "7e38611d-fb83-43c0-9f14-da68a1757728": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "content": [
+            "05c3195f-e879-4d26-8f2c-600000ed5f35",
+            "62578540-f664-492d-a597-531124552a81"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570611780000,
+          "format": {
+            "page_icon": "🥉"
+          },
+          "id": "7e38611d-fb83-43c0-9f14-da68a1757728",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570612800000,
+          "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "parent_table": "space",
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            }
+          ],
+          "properties": {
+            "title": [
+              [
+                "测试"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 15
+        }
+      }
+    },
+    "collection": {
+      "f1bdb2bf-7906-4fe2-851c-9ceab8988686": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "f1bdb2bf-7906-4fe2-851c-9ceab8988686",
+          "parent_id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "parent_table": "block",
+          "schema": {
+            "H'fI": {
+              "name": "Tags",
+              "type": "multi_select"
+            },
+            "[4hM": {
+              "name": "Date",
+              "type": "date"
+            },
+            "title": {
+              "name": "Name",
+              "type": "title"
+            }
+          },
+          "version": 1
+        }
+      }
+    },
+    "collection_view": {
+      "d4183c9b-89c5-4a69-9920-19fa6134dace": {
+        "role": "editor",
+        "value": {
+          "alive": true,
+          "id": "d4183c9b-89c5-4a69-9920-19fa6134dace",
+          "name": "Calendar View",
+          "parent_id": "0f1eface-c8db-486b-b3b5-57521a4b48cf",
+          "parent_table": "block",
+          "query": {
+            "calendar_by": "[4hM"
+          },
+          "type": "calendar",
+          "version": 1
+        }
+      }
+    },
+    "space": {
+      "ea3a90e6-3493-4d63-aa83-169b3e695693": {
+        "role": "editor",
+        "value": {
+          "beta_enabled": false,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570600920000,
+          "domain": "ymlll",
+          "id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571021340000,
+          "name": "ymlll",
+          "pages": [
+            "c4c5137a-3ae7-43b5-80d4-facb13705c8c",
+            "7e38611d-fb83-43c0-9f14-da68a1757728",
+            "29253221-a591-41de-826d-b45fad7dd376",
+            "04e8f9b5-40a7-46ae-9429-37393b566515",
+            "cf7b1a37-66ea-499a-90e5-68028152b10a",
+            "41c92489-7918-4e24-926e-e28d5e48dc86"
+          ],
+          "permissions": [
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "93b0076c-9156-4b75-9185-2d346e18553d"
+            },
+            {
+              "role": "editor",
+              "type": "user_permission",
+              "user_id": "300f6910-3543-4d76-819e-9e2d792f3331"
+            }
+          ],
+          "version": 31
+        }
+      }
+    }
+  },
+  "result": {
+    "aggregationResults": [],
+    "blockIds": [],
+    "total": 0,
+    "type": "table"
+  }
+}
