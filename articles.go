@@ -83,7 +83,8 @@ func buildArticleNavigation(article *Article, isRootPage func(string) bool, idTo
 			continue
 		}
 		title := block.Title
-		uri := "/article/" + normalizeID(block.ID) + "/" + urlify(title)
+		uri := "/article/" + normalizeID(block.ID) + ".html"
+		//uri := "/article/" + normalizeID(block.ID) + "/" + urlify(title)
 		path := URLPath{
 			Name: title,
 			URL:  uri,
@@ -143,16 +144,16 @@ func buildArticlesNavigation(articles *Articles) {
 func LoadArticles(d *caching_downloader.Downloader) *Articles {
 	res := &Articles{}
 	//_, err := d.DownloadPagesRecursively(notionWebsiteStartPage)
-	_, err := downloadPagesRecursively(d,notionWebsiteStartPage)
-	must(err)
-	res.idToPage = d.IdToPage
-	//log.Println("res.idToPage:",res.idToPage["ee6bb471a110437ebe54dcdc483ba978"])
+	pages, _ := downloadPagesRecursively(d,notionWebsiteStartPage)
+	//must(err)
+	res.idToPage = pages
+	//res.idToPage = d.IdToPage
 
 	c := d.GetClientCopy()
 	res.idToArticle = map[string]*Article{}
 	for id, page := range res.idToPage {
-		log.Println(id)
-		panicIf(id != notionapi.ToNoDashID(id), "bad id '%s' sneaked in", id)
+		//log.Println(id,page)
+		//panicIf(id != notionapi.ToNoDashID(id), "bad id '%s' sneaked in", id)
 		article := notionPageToArticle(c, page)
 		if article.urlOverride != "" {
 			verbose("url override: %s => %s\n", article.urlOverride, article.ID)
@@ -179,7 +180,6 @@ func LoadArticles(d *caching_downloader.Downloader) *Articles {
 	sort.Slice(res.blog, func(i, j int) bool {
 		return res.blog[i].PublishedOn.After(res.blog[j].PublishedOn)
 	})
-	log.Println(res.articles[0].ID)
 
 
 	return res
@@ -260,7 +260,7 @@ func filterArticlesByTag(articles []*Article, tag string, include bool) []*Artic
 	return res
 }
 
-func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) ([]*notionapi.Page, error) {
+func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) (map[string]*notionapi.Page, error) {
 	toVisit := []string{pageID}
 	downloaded := map[string]*notionapi.Page{}
 	for len(toVisit) > 0 {
@@ -276,7 +276,7 @@ func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) ([
 		}
 		downloaded[pageID] = page
 
-		subPages := getSubPages(page)
+		subPages := getSubPages(d,page)
 		toVisit = append(toVisit, subPages...)
 	}
 	n := len(downloaded)
@@ -288,20 +288,22 @@ func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) ([
 		ids = append(ids, id)
 	}
 	sort.Strings(ids)
-	pages := make([]*notionapi.Page, n)
-	for i, id := range ids {
-		pages[i] = downloaded[id]
+	//pages := make([]*notionapi.Page, n)
+	pages := make(map[string]*notionapi.Page, n)
+	for _, id := range ids {
+		pages[string(id)] = downloaded[id]
 	}
 	return pages, nil
 }
 
 // GetSubPages return list of ids for direct sub-pages of this page
-func getSubPages(p *notionapi.Page) []string {
+func getSubPages(d *caching_downloader.Downloader,p *notionapi.Page) []string {
 	root := p.Root()
 	//panicIf(!isPageBlock(root))
 	subPages := map[string]struct{}{}
 	seenBlocks := map[string]struct{}{}
 	blocksToVisit := append([]string{}, root.ContentIDs...)
+	//log.Println("blocksToVisit:",blocksToVisit)
 	for len(blocksToVisit) > 0 {
 		id := notionapi.ToDashID(blocksToVisit[0])
 		blocksToVisit = blocksToVisit[1:]
@@ -310,7 +312,16 @@ func getSubPages(p *notionapi.Page) []string {
 		}
 		seenBlocks[id] = struct{}{}
 		block := p.BlockByID(id)
-		subPages[id] = struct{}{}
+		if ifQuota(d,id){
+			subPages[id] = struct{}{}
+		}
+
+
+		//page, _ := d.DownloadPage(notionapi.ToNoDashID(id))
+		//bblocksToVisit := append([]string{}, page.Root().ContentIDs...)
+		//if len(bblocksToVisit)!=0{
+		//	subPages[id] = struct{}{}
+		//}
 		//if p.IsSubPage(block) {
 		//	subPages[id] = struct{}{}
 		//}
@@ -323,4 +334,28 @@ func getSubPages(p *notionapi.Page) []string {
 	}
 	sort.Strings(res)
 	return res
+}
+
+func ifQuota(d *caching_downloader.Downloader,p string) bool {
+	records,err:=d.Client.GetBlockRecords([]string{p})
+	if err!=nil{
+		log.Println(err)
+		return false
+	}
+
+	for _, results := range records.RawJSON{
+		for _,result := range results.([]interface{}){
+			map_result:=result.(map[string]interface{})
+			if value, ok := map_result["value"]; ok {
+				map_value := value.(map[string]interface{})
+				if content, ok := map_value["content"]; ok {
+					if len(content.([]interface{}))!=0{
+						log.Println("子模块(content)个数:",len(content.([]interface{})))
+						return true
+					}
+				}
+			}
+		}
+	}
+	return false
 }

@@ -577,7 +577,7 @@ func notionPageToArticle(c *notionapi.Client, page *notionapi.Page) *Article {
 		a.Paths = append(a.Paths, path)
 	}
 
-	/*format := root.FormatPage()
+	format := root.FormatPage()
 	// set image header from cover page
 	if a.HeaderImageURL == "" && format != nil && format.PageCover != "" {
 		path, err := downloadAndCacheImage(c, format.PageCover)
@@ -591,7 +591,7 @@ func notionPageToArticle(c *notionapi.Client, page *notionapi.Page) *Article {
 		a.Images = append(a.Images, im)
 		uri := netlifyRequestGetFullHost() + relURL
 		a.HeaderImageURL = uri
-	}*/
+	}
 
 	a.removeEmptyTextBlocksAtEnd(page.Root())
 	return a

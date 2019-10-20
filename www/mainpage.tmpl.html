@@ -9,12 +9,12 @@
       content="Personal page of Krzysztof Kowalczyk. Programmer, creator of SumatraPDF."
     />
 
-    <title>Krzysztof Kowalczyk</title>
+    <title>鱼猫</title>
     <link href="/css/main.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div id="content" style="margin-top: 2em;">
+    <!--div id="content" style="margin-top: 2em;">
       <div class="mainpage-wrap">
         <div style="display:flex; flex-direction: row">
           <div>
@@ -42,18 +42,17 @@
             </div>
           </div>
         </div>
-      </div>
+      </div-->
 
 
 
 
       <div class="book-list-headline" style="margin-top: 2em;">
-        Recently I wrote
       </div>
 
       <div class="articles-list-wrap flex-col">
         <div>
-          {{ range.Articles }}
+          {{ range .Articles }}
           <div style="margin-left: 1em;">
             <a href="{{.URL}}">{{.Title}}</a>
             {{if .TagsDisplay}}
@@ -63,7 +62,7 @@
             {{ end }}
           </div>
           {{ end }}
-          <div
+          <!--div
             style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;"
           >
             <div>
@@ -74,14 +73,21 @@
             </div>
           </div>
 
-          <hr />
-
+          <hr /-->
+          <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                     <div>
+                       <a target = "_blank" href="https://github.com/yooml/notion-blog">github</a>
+                     </div>
+                     <div class="headline" style="font-size:80%">
+                       <a href="/article/38e8c2a0cf7146a68cc24f847f94d800.html">关于</a>
+                     </div>
+                   </div>
           <center>
-            <b>My external brain</b>
+            <b>notion</b>
           </center>
           <center>
             <a style="font-size: 85%; margin-top: -6px" href="/changelog.html"
-              >changelog</a
+              >笔记改动历史</a
             >
           </center>
           <div style="margin-top: 1em">

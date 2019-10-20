@@ -259,9 +259,9 @@ func NewHTMLConverter(c *notionapi.Client, article *Article) *Converter {
 func (c *Converter) GenereateHTML() []byte {
 	inner := string(c.r.ToHTML())
 	page := c.page.Root()
-	//f := page.FormatPage()
-	//isMono := f != nil && f.PageFont == "mono"
-	isMono := page != nil 
+	f := page.FormatPage()
+	isMono := f != nil && f.PageFont == "mono"
+	//isMono := page != nil
 
 	s := `<p></p>`
 	if isMono {

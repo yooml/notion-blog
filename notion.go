@@ -10,7 +10,6 @@ import (
 	"os/exec"
 	"runtime"
 	"time"
-	"github.com/kjk/blog/tohtml"
 )
 
 var (
@@ -132,7 +131,7 @@ func main()  {
 	os.MkdirAll("netlify_static", 0755)
 
 	client := &notionapi.Client{}
-	pageID := "19675f25c0fd4c41a704c87127861163"
+	/*pageID := "19675f25c0fd4c41a704c87127861163"
 	page, err := client.DownloadPage(pageID)
 	subPages := page.GetSubPages()
 	blocksToVisit := append([]string{}, page.Root().ContentIDs...)
@@ -149,17 +148,16 @@ func main()  {
 		page:         page,
 	}
 	res.r = r
-	log.Println(string(res.GenereateHTML()))
+	log.Println(string(res.GenereateHTML()))*/
 	//client := newNotionClient()
-	cache, err := caching_downloader.NewDirectoryCache(cacheDir)
+	cache, _ := caching_downloader.NewDirectoryCache(cacheDir)
 	//must(err)
 	d := caching_downloader.New(cache, client)
 	d.EventObserver = eventObserver
 	d.RedownloadNewerVersions = true
 	d.NoReadCache = flgNoCache
 
-	articles := rebuildAll(d)
-	log.Println(articles.idToArticle["19675f25c0fd4c41a704c87127861163"].Title,articles.idToArticle["19675f25c0fd4c41a704c87127861163"].Paths)
+	rebuildAll(d)
 }
 
 

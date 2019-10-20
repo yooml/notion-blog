@@ -134,7 +134,7 @@
     <div id="content">
         <div id="post">
             <div class="title">
-                <a href="/">Home</a> / {{range .Article.Paths}}
+                <a href="javascript:history.back(-1)">back</a> / {{range .Article.Paths}}
                 <a href="{{.URL}}">{{.Name}}</a> / {{end}} {{.Article.Title}}
 
                 {{if .NotionEditURL}}
@@ -177,8 +177,8 @@
                     {{if .Article.CollectionURL}}
                     <a href="{{.Article.CollectionURL}}">{{.Article.Collection}}</a>
                     {{else}}
-                        <a href="javascript:history.back(-1)">back</a>
-                        {{end}}
+                        <a href="/">home</a>
+                    {{end}}
                         <!-- prettier-ignore -->
                 </div>
                 <div>

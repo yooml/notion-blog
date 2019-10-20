@@ -85,7 +85,7 @@ func downloadAndCacheImage(c *notionapi.Client, uri string) (string, error) {
 	logf("Downloading %s ... ", uri)
 
 	imgData, ext, err := downloadImage(c, uri)
-	must(err)
+	//must(err)
 
 	cachedPath = filepath.Join(imgDir, sha+ext)
 

@@ -43,7 +43,8 @@
 <body>
   <div id="content" style="clear:both;line-height:1.50; margin-top: 18px; margin-left: 18pt; margin-right: 18pt;">
 
-    <p><a href="/">Home</a> / Recently updated</p>
+    <p><a href="javascript:history.back(-1)">back</a>
+      / Recently updated</p>
 
     <table id="arc">
       <tbody>
@@ -58,7 +59,7 @@
   </div>
   <p style="clear:both"></p>
   <hr>
-  <a href="javascript:history.back(-1)">back</a>
+  <center><a href="/">Home</a></center>
   <br>
   {{template "analytics.tmpl.html" .}}
 
