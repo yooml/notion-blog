@@ -1,4 +1,4 @@
-1396 1571570226070 httpcache-v1
+1396 1571713664523 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -20,7 +20,7 @@ Response:+1196
         "content": [
           "a3258471-0752-45f6-beaf-7bdcc9e1d032",
           "f1dff802-aec3-4f5c-9a86-044cfd1ffd08",
-          "266d5d68-974e-474c-9b63-9d6b215b705c",
+          "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
           "9f756a15-c372-48ca-970b-0873ae77a5ad"
         ],
         "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -31,7 +31,7 @@ Response:+1196
         "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1571568900000,
+        "last_edited_time": 1571707920000,
         "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
         "parent_table": "collection",
         "properties": {
@@ -47,12 +47,12 @@ Response:+1196
           ]
         },
         "type": "page",
-        "version": 37
+        "version": 41
       }
     }
   ]
 }
-21839 1571570226071 httpcache-v1
+22841 1571713664524 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -65,7 +65,7 @@ Body:+152
   "pageId": "16752d1a-d056-4467-b31c-836bccd54c0e",
   "verticalColumns": false
 }
-Response:+21598
+Response:+22600
 {
   "cursor": {
     "stack": []
@@ -79,7 +79,7 @@ Response:+21598
           "content": [
             "a3258471-0752-45f6-beaf-7bdcc9e1d032",
             "f1dff802-aec3-4f5c-9a86-044cfd1ffd08",
-            "266d5d68-974e-474c-9b63-9d6b215b705c",
+            "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
             "9f756a15-c372-48ca-970b-0873ae77a5ad"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -90,7 +90,7 @@ Response:+21598
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
+          "last_edited_time": 1571707920000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -106,26 +106,7 @@ Response:+21598
             ]
           },
           "type": "page",
-          "version": 37
-        }
-      },
-      "266d5d68-974e-474c-9b63-9d6b215b705c": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571478870819,
-          "id": "266d5d68-974e-474c-9b63-9d6b215b705c",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
-          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
-          "parent_table": "block",
-          "type": "text",
-          "version": 13
+          "version": 41
         }
       },
       "9f756a15-c372-48ca-970b-0873ae77a5ad": {
@@ -226,7 +207,7 @@ Response:+21598
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
+          "last_edited_time": 1571576700000,
           "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
           "parent_table": "space",
           "permissions": [
@@ -240,7 +221,7 @@ Response:+21598
             }
           ],
           "type": "collection_view_page",
-          "version": 53,
+          "version": 55,
           "view_ids": [
             "59b782cf-74dc-4bae-84ff-e7aad94633b8",
             "1c8ff602-e606-40b7-9ec1-705bf22b9b99",
@@ -280,6 +261,39 @@ Response:+21598
           },
           "type": "page",
           "version": 27
+        }
+      },
+      "fac46ab8-75f7-464e-8ca0-1425f5ef7525": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bb766504-40b6-451f-99c9-d4d051841945",
+            "6d0fbaa0-4ed5-4c99-867d-9468f639a8e7",
+            "99827ae9-7b95-40dd-97e1-5f384c668f75",
+            "2c558b37-e8f1-4091-b9cb-ba4e6630c825",
+            "32e1b96a-0b22-4e43-bdcc-51432729488f"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571707921313,
+          "id": "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571708400000,
+          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "collection_view_page"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 17
         }
       }
     },
@@ -420,7 +434,7 @@ Response:+21598
               "type": "title"
             }
           },
-          "version": 33
+          "version": 37
         }
       }
     },
@@ -441,6 +455,7 @@ Response:+21598
           "name": "youdao",
           "page_sort": [
             "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
+            "20f65122-cf28-4341-a81b-fb0a3152cb40",
             "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
             "3b8d4208-f26a-4123-a21f-abbddecbe538",
             "621a2776-927c-4a8a-92c2-b680793308e6",
@@ -461,8 +476,25 @@ Response:+21598
             ],
             "filter_operator": "and"
           },
+          "query2": {
+            "filter": {
+              "filters": [
+                {
+                  "filter": {
+                    "operator": "enum_contains",
+                    "value": {
+                      "type": "exact",
+                      "value": "youdao"
+                    }
+                  },
+                  "property": "prop_2"
+                }
+              ],
+              "operator": "and"
+            }
+          },
           "type": "list",
-          "version": 12
+          "version": 14
         }
       },
       "1c8ff602-e606-40b7-9ec1-705bf22b9b99": {
@@ -656,6 +688,7 @@ Response:+21598
             "3b8d4208-f26a-4123-a21f-abbddecbe538",
             "ee6bb471-a110-437e-be54-dcdc483ba978",
             "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
+            "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
             "4703d0a5-eccf-4a3a-8aea-310e9aa61be6",
             "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
             "0a6f300e-6e3f-435e-9e07-2129421956e8",
@@ -699,7 +732,7 @@ Response:+21598
             }
           },
           "type": "list",
-          "version": 75
+          "version": 83
         }
       }
     },
@@ -732,7 +765,7 @@ Response:+21598
     "space": {}
   }
 }
-643 1571570226071 httpcache-v1
+643 1571713664525 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -763,7 +796,7 @@ Response:+444
     }
   ]
 }
-61946 1571570226076 httpcache-v1
+75735 1571713664529 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+412
@@ -786,7 +819,7 @@ Body:+412
     "sort": null
   }
 }
-Response:+61443
+Response:+75232
 {
   "recordMap": {
     "block": {
@@ -812,6 +845,38 @@ Response:+61443
           },
           "type": "header",
           "version": 1
+        }
+      },
+      "0c34b348-b553-4c8f-83ed-a164c804c569": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "0c34b348-b553-4c8f-83ed-a164c804c569",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://blog.csdn.net/s13335358730/article/details/85219250",
+                [
+                  [
+                    "a",
+                    "https://blog.csdn.net/s13335358730/article/details/85219250"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
         }
       },
       "13119df1-b1cb-45f7-815f-8a7e1e4103d2": {
@@ -852,7 +917,7 @@ Response:+61443
           "content": [
             "a3258471-0752-45f6-beaf-7bdcc9e1d032",
             "f1dff802-aec3-4f5c-9a86-044cfd1ffd08",
-            "266d5d68-974e-474c-9b63-9d6b215b705c",
+            "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
             "9f756a15-c372-48ca-970b-0873ae77a5ad"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -863,7 +928,7 @@ Response:+61443
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
+          "last_edited_time": 1571707920000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -879,7 +944,7 @@ Response:+61443
             ]
           },
           "type": "page",
-          "version": 37
+          "version": 41
         }
       },
       "19675f25-c0fd-4c41-a704-c87127861163": {
@@ -888,7 +953,8 @@ Response:+61443
           "alive": true,
           "content": [
             "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
-            "16752d1a-d056-4467-b31c-836bccd54c0e"
+            "16752d1a-d056-4467-b31c-836bccd54c0e",
+            "38e8c2a0-cf71-46a6-8cc2-4f847f94d800"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -898,7 +964,7 @@ Response:+61443
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571471520000,
+          "last_edited_time": 1571577000000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -914,7 +980,48 @@ Response:+61443
             ]
           },
           "type": "page",
-          "version": 88
+          "version": 90
+        }
+      },
+      "20f65122-cf28-4341-a81b-fb0a3152cb40": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3957c35d-e8b1-41ff-a721-edac3023203c",
+            "618defcf-b212-4909-9b77-31aa897eaacf",
+            "0c34b348-b553-4c8f-83ed-a164c804c569",
+            "f82c3a30-02eb-4330-bee9-e7c86b776934",
+            "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82",
+            "cbf791aa-b38a-4134-815a-6d1274fc5074",
+            "2a2a63e8-4592-4f54-8f9f-e488e5000f3b",
+            "68dc502d-f4e1-41e3-9289-8df28de421fa"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576700000,
+          "id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577540000,
+          "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
+          "parent_table": "collection",
+          "properties": {
+            "prop_2": [
+              [
+                "youdao,go"
+              ]
+            ],
+            "title": [
+              [
+                "goroutine schedule"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
         }
       },
       "211d4556-0b09-4b3e-aa40-6da3793d34d0": {
@@ -972,23 +1079,30 @@ Response:+61443
           "version": 21
         }
       },
-      "266d5d68-974e-474c-9b63-9d6b215b705c": {
+      "2a2a63e8-4592-4f54-8f9f-e488e5000f3b": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "created_by_table": "notion_user",
-          "created_time": 1571478870819,
-          "id": "266d5d68-974e-474c-9b63-9d6b215b705c",
+          "created_time": 1571576707735,
+          "id": "2a2a63e8-4592-4f54-8f9f-e488e5000f3b",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
-          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
           "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "P表示调度的上下文(a context for scheduling)。您可以将其视为在单个线程上运行go代码的调度程序的本地化版本。这是让我们从n:1调度程序转到m:n调度程序的重要部分。在运行时代码中，处理器称为p。"
+              ]
+            ]
+          },
           "type": "text",
-          "version": 13
+          "version": 2
         }
       },
       "32696ff7-d115-49ce-952e-bb596a5584c4": {
@@ -1102,6 +1216,74 @@ Response:+61443
           },
           "type": "code",
           "version": 14
+        }
+      },
+      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
+            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
+            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571572260000,
+          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571647740000,
+          "parent_id": "19675f25-c0fd-4c41-a704-c87127861163",
+          "parent_table": "block",
+          "properties": {
+            "prop_2": [
+              [
+                "2019.10"
+              ]
+            ],
+            "title": [
+              [
+                "关于"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
+      "3957c35d-e8b1-41ff-a721-edac3023203c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "3957c35d-e8b1-41ff-a721-edac3023203c",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "http://morsmachine.dk/go-scheduler",
+                [
+                  [
+                    "a",
+                    "http://morsmachine.dk/go-scheduler"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
         }
       },
       "3b8d4208-f26a-4123-a21f-abbddecbe538": {
@@ -1273,7 +1455,7 @@ Response:+61443
         "value": {
           "alive": true,
           "content": [
-            "a439f522-5291-4a72-ae1d-fe6fd58860cb",
+            "f30fb1af-9ee6-4880-ae20-cf48a7078fe1",
             "13119df1-b1cb-45f7-815f-8a7e1e4103d2",
             "6a4a8cec-63f5-48b4-8cfd-ae18906dfdb3"
           ],
@@ -1285,7 +1467,7 @@ Response:+61443
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571563680000,
+          "last_edited_time": 1571651040000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -1301,7 +1483,7 @@ Response:+61443
             ]
           },
           "type": "page",
-          "version": 19
+          "version": 22
         }
       },
       "4a308471-e969-46aa-8b7a-55b4891c0b5b": {
@@ -1381,6 +1563,38 @@ Response:+61443
           "version": 1
         }
       },
+      "618defcf-b212-4909-9b77-31aa897eaacf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "618defcf-b212-4909-9b77-31aa897eaacf",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://blog.csdn.net/baidu_23959681/article/details/83855693",
+                [
+                  [
+                    "a",
+                    "https://blog.csdn.net/baidu_23959681/article/details/83855693"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
       "621a2776-927c-4a8a-92c2-b680793308e6": {
         "role": "comment_only",
         "value": {
@@ -1414,6 +1628,32 @@ Response:+61443
           },
           "type": "page",
           "version": 54
+        }
+      },
+      "68dc502d-f4e1-41e3-9289-8df28de421fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "68dc502d-f4e1-41e3-9289-8df28de421fa",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "2.即使gomaxprocs设置为1，goruntine仍是多线程的，因为如上图一个线程M0阻塞（比如系统调用）的时候，会起另一个M1线程去获取P（上下文），gomaxprocs设置为1本质是把P设置为1"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
         }
       },
       "6a4a8cec-63f5-48b4-8cfd-ae18906dfdb3": {
@@ -1763,25 +2003,6 @@ Response:+61443
           "version": 119
         }
       },
-      "a439f522-5291-4a72-ae1d-fe6fd58860cb": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571560380000,
-          "id": "a439f522-5291-4a72-ae1d-fe6fd58860cb",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
-          "parent_id": "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
-          "parent_table": "block",
-          "type": "text",
-          "version": 6
-        }
-      },
       "a7a88aa0-a0d6-4734-9657-bd59aa1d4865": {
         "role": "comment_only",
         "value": {
@@ -1919,6 +2140,32 @@ Response:+61443
           "version": 10
         }
       },
+      "cbf791aa-b38a-4134-815a-6d1274fc5074": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "cbf791aa-b38a-4134-815a-6d1274fc5074",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "1.M是os thread，P是上下文，G是goruntine"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
       "cde74dbd-347f-4dc5-8498-bd39cf4534bb": {
         "role": "comment_only",
         "value": {
@@ -1965,7 +2212,7 @@ Response:+61443
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
+          "last_edited_time": 1571576700000,
           "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
           "parent_table": "space",
           "permissions": [
@@ -1979,7 +2226,7 @@ Response:+61443
             }
           ],
           "type": "collection_view_page",
-          "version": 53,
+          "version": 55,
           "view_ids": [
             "59b782cf-74dc-4bae-84ff-e7aad94633b8",
             "1c8ff602-e606-40b7-9ec1-705bf22b9b99",
@@ -2182,6 +2429,98 @@ Response:+61443
           "version": 27
         }
       },
+      "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "这里我们看到一个线程放弃了它的上下文，以便另一个线程可以运行它。调度程序确保有足够的线程运行所有上下文。上图中的m1可能只是为了处理这个系统调用而创建的，也可能来自线程缓存。系统调用线程将保留进行系统调用的goroutine，因为它在技术上仍在执行，尽管在操作系统中被阻塞。当系统调用返回时，线程必须尝试获取上下文才能运行返回的goroutine。正常的操作模式是从另一个线程中窃取上下文。如果它不能偷一个，它将把goroutine放在全局运行队列上，放在线程缓存上，然后进入睡眠状态。全局运行队列是上下文在用完本地运行队列时从中提取的运行队列。上下文还定期检查全局运行队列中的goroutine。否则，全局运行队列上的goroutine可能会因为饥饿而永远无法运行。这种对syscalls的处理是go程序运行多线程的原因，即使gomaxprocs是1。运行时使用调用系统调用的goroutine，从而留下线程。"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "f30fb1af-9ee6-4880-ae20-cf48a7078fe1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571651040000,
+          "format": {
+            "bookmark_icon": "https://blog.csdn.net/favicon.ico"
+          },
+          "id": "f30fb1af-9ee6-4880-ae20-cf48a7078fe1",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571651040000,
+          "parent_id": "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
+          "parent_table": "block",
+          "properties": {
+            "link": [
+              [
+                "https://blog.csdn.net/qq_28119741/article/details/82728810"
+              ]
+            ]
+          },
+          "type": "bookmark",
+          "version": 10
+        }
+      },
+      "f82c3a30-02eb-4330-bee9-e7c86b776934": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576760000,
+          "file_ids": [
+            "c0ef82c3-f6d9-4145-943d-0f712ed5a57c"
+          ],
+          "format": {
+            "block_aspect_ratio": 0.7014925373134329,
+            "block_full_width": false,
+            "block_page_width": true,
+            "block_preserve_scale": true,
+            "block_width": 1072,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0ef82c3-f6d9-4145-943d-0f712ed5a57c/Untitled.png"
+          },
+          "id": "f82c3a30-02eb-4330-bee9-e7c86b776934",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576760000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0ef82c3-f6d9-4145-943d-0f712ed5a57c/Untitled.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 11
+        }
+      },
       "fa692b1c-950f-4133-a8c9-62fb52d8adb4": {
         "role": "comment_only",
         "value": {
@@ -2221,6 +2560,39 @@ Response:+61443
           },
           "type": "bookmark",
           "version": 18
+        }
+      },
+      "fac46ab8-75f7-464e-8ca0-1425f5ef7525": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bb766504-40b6-451f-99c9-d4d051841945",
+            "6d0fbaa0-4ed5-4c99-867d-9468f639a8e7",
+            "99827ae9-7b95-40dd-97e1-5f384c668f75",
+            "2c558b37-e8f1-4091-b9cb-ba4e6630c825",
+            "32e1b96a-0b22-4e43-bdcc-51432729488f"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571707921313,
+          "id": "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571708400000,
+          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "collection_view_page"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 17
         }
       }
     },
@@ -2361,7 +2733,7 @@ Response:+61443
               "type": "title"
             }
           },
-          "version": 33
+          "version": 37
         }
       }
     },
@@ -2481,6 +2853,7 @@ Response:+61443
     "blockIds": [
       "19675f25-c0fd-4c41-a704-c87127861163",
       "480d10e1-f973-4c50-b91e-b2797038de2f",
+      "20f65122-cf28-4341-a81b-fb0a3152cb40",
       "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
       "16752d1a-d056-4467-b31c-836bccd54c0e",
       "ee6bb471-a110-437e-be54-dcdc483ba978",
@@ -2488,11 +2861,11 @@ Response:+61443
       "3b8d4208-f26a-4123-a21f-abbddecbe538",
       "621a2776-927c-4a8a-92c2-b680793308e6"
     ],
-    "total": 8,
+    "total": 9,
     "type": "table"
   }
 }
-41555 1571570226084 httpcache-v1
+43267 1571713664531 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+806
@@ -2531,7 +2904,7 @@ Body:+806
     "sort": null
   }
 }
-Response:+40658
+Response:+42370
 {
   "recordMap": {
     "block": {
@@ -2566,7 +2939,7 @@ Response:+40658
           "content": [
             "a3258471-0752-45f6-beaf-7bdcc9e1d032",
             "f1dff802-aec3-4f5c-9a86-044cfd1ffd08",
-            "266d5d68-974e-474c-9b63-9d6b215b705c",
+            "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
             "9f756a15-c372-48ca-970b-0873ae77a5ad"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -2577,7 +2950,7 @@ Response:+40658
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
+          "last_edited_time": 1571707920000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -2593,7 +2966,7 @@ Response:+40658
             ]
           },
           "type": "page",
-          "version": 37
+          "version": 41
         }
       },
       "19675f25-c0fd-4c41-a704-c87127861163": {
@@ -2602,7 +2975,8 @@ Response:+40658
           "alive": true,
           "content": [
             "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
-            "16752d1a-d056-4467-b31c-836bccd54c0e"
+            "16752d1a-d056-4467-b31c-836bccd54c0e",
+            "38e8c2a0-cf71-46a6-8cc2-4f847f94d800"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -2612,7 +2986,7 @@ Response:+40658
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571471520000,
+          "last_edited_time": 1571577000000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -2628,7 +3002,7 @@ Response:+40658
             ]
           },
           "type": "page",
-          "version": 88
+          "version": 90
         }
       },
       "25dc3406-42e4-4473-8145-27a723500a9f": {
@@ -2669,25 +3043,6 @@ Response:+40658
           },
           "type": "bookmark",
           "version": 21
-        }
-      },
-      "266d5d68-974e-474c-9b63-9d6b215b705c": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571478870819,
-          "id": "266d5d68-974e-474c-9b63-9d6b215b705c",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
-          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
-          "parent_table": "block",
-          "type": "text",
-          "version": 13
         }
       },
       "32696ff7-d115-49ce-952e-bb596a5584c4": {
@@ -2774,6 +3129,42 @@ Response:+40658
           },
           "type": "bulleted_list",
           "version": 1
+        }
+      },
+      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
+            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
+            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571572260000,
+          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571647740000,
+          "parent_id": "19675f25-c0fd-4c41-a704-c87127861163",
+          "parent_table": "block",
+          "properties": {
+            "prop_2": [
+              [
+                "2019.10"
+              ]
+            ],
+            "title": [
+              [
+                "关于"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
         }
       },
       "406742e2-636e-4696-9024-4ab8bf0f5aa2": {
@@ -3289,7 +3680,7 @@ Response:+40658
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
+          "last_edited_time": 1571576700000,
           "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
           "parent_table": "space",
           "permissions": [
@@ -3303,7 +3694,7 @@ Response:+40658
             }
           ],
           "type": "collection_view_page",
-          "version": 53,
+          "version": 55,
           "view_ids": [
             "59b782cf-74dc-4bae-84ff-e7aad94633b8",
             "1c8ff602-e606-40b7-9ec1-705bf22b9b99",
@@ -3446,6 +3837,39 @@ Response:+40658
           "type": "bookmark",
           "version": 18
         }
+      },
+      "fac46ab8-75f7-464e-8ca0-1425f5ef7525": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bb766504-40b6-451f-99c9-d4d051841945",
+            "6d0fbaa0-4ed5-4c99-867d-9468f639a8e7",
+            "99827ae9-7b95-40dd-97e1-5f384c668f75",
+            "2c558b37-e8f1-4091-b9cb-ba4e6630c825",
+            "32e1b96a-0b22-4e43-bdcc-51432729488f"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571707921313,
+          "id": "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571708400000,
+          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "collection_view_page"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 17
+        }
       }
     },
     "collection": {
@@ -3585,7 +4009,7 @@ Response:+40658
               "type": "title"
             }
           },
-          "version": 33
+          "version": 37
         }
       }
     },
@@ -3673,7 +4097,7 @@ Response:+40658
     "type": "table"
   }
 }
-61753 1571570226089 httpcache-v1
+63806 1571713664533 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+613
@@ -3704,7 +4128,7 @@ Body:+613
     "sort": null
   }
 }
-Response:+61049
+Response:+63102
 {
   "recordMap": {
     "block": {
@@ -3770,7 +4194,7 @@ Response:+61049
           "content": [
             "a3258471-0752-45f6-beaf-7bdcc9e1d032",
             "f1dff802-aec3-4f5c-9a86-044cfd1ffd08",
-            "266d5d68-974e-474c-9b63-9d6b215b705c",
+            "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
             "9f756a15-c372-48ca-970b-0873ae77a5ad"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -3781,7 +4205,7 @@ Response:+61049
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
+          "last_edited_time": 1571707920000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -3797,7 +4221,7 @@ Response:+61049
             ]
           },
           "type": "page",
-          "version": 37
+          "version": 41
         }
       },
       "19675f25-c0fd-4c41-a704-c87127861163": {
@@ -3806,7 +4230,8 @@ Response:+61049
           "alive": true,
           "content": [
             "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
-            "16752d1a-d056-4467-b31c-836bccd54c0e"
+            "16752d1a-d056-4467-b31c-836bccd54c0e",
+            "38e8c2a0-cf71-46a6-8cc2-4f847f94d800"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
@@ -3816,7 +4241,7 @@ Response:+61049
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571471520000,
+          "last_edited_time": 1571577000000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -3832,7 +4257,7 @@ Response:+61049
             ]
           },
           "type": "page",
-          "version": 88
+          "version": 90
         }
       },
       "211d4556-0b09-4b3e-aa40-6da3793d34d0": {
@@ -3888,25 +4313,6 @@ Response:+61049
           },
           "type": "bookmark",
           "version": 21
-        }
-      },
-      "266d5d68-974e-474c-9b63-9d6b215b705c": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571478870819,
-          "id": "266d5d68-974e-474c-9b63-9d6b215b705c",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571568900000,
-          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
-          "parent_table": "block",
-          "type": "text",
-          "version": 13
         }
       },
       "32696ff7-d115-49ce-952e-bb596a5584c4": {
@@ -4020,6 +4426,42 @@ Response:+61049
           },
           "type": "code",
           "version": 14
+        }
+      },
+      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
+            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
+            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571572260000,
+          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571647740000,
+          "parent_id": "19675f25-c0fd-4c41-a704-c87127861163",
+          "parent_table": "block",
+          "properties": {
+            "prop_2": [
+              [
+                "2019.10"
+              ]
+            ],
+            "title": [
+              [
+                "关于"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
         }
       },
       "3b8d4208-f26a-4123-a21f-abbddecbe538": {
@@ -4191,7 +4633,7 @@ Response:+61049
         "value": {
           "alive": true,
           "content": [
-            "a439f522-5291-4a72-ae1d-fe6fd58860cb",
+            "f30fb1af-9ee6-4880-ae20-cf48a7078fe1",
             "13119df1-b1cb-45f7-815f-8a7e1e4103d2",
             "6a4a8cec-63f5-48b4-8cfd-ae18906dfdb3"
           ],
@@ -4203,7 +4645,7 @@ Response:+61049
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571563680000,
+          "last_edited_time": 1571651040000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
@@ -4219,7 +4661,7 @@ Response:+61049
             ]
           },
           "type": "page",
-          "version": 19
+          "version": 22
         }
       },
       "4a308471-e969-46aa-8b7a-55b4891c0b5b": {
@@ -4681,25 +5123,6 @@ Response:+61049
           "version": 119
         }
       },
-      "a439f522-5291-4a72-ae1d-fe6fd58860cb": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571560380000,
-          "id": "a439f522-5291-4a72-ae1d-fe6fd58860cb",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
-          "parent_id": "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
-          "parent_table": "block",
-          "type": "text",
-          "version": 6
-        }
-      },
       "a7a88aa0-a0d6-4734-9657-bd59aa1d4865": {
         "role": "comment_only",
         "value": {
@@ -4883,7 +5306,7 @@ Response:+61049
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
+          "last_edited_time": 1571576700000,
           "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
           "parent_table": "space",
           "permissions": [
@@ -4897,7 +5320,7 @@ Response:+61049
             }
           ],
           "type": "collection_view_page",
-          "version": 53,
+          "version": 55,
           "view_ids": [
             "59b782cf-74dc-4bae-84ff-e7aad94633b8",
             "1c8ff602-e606-40b7-9ec1-705bf22b9b99",
@@ -5100,6 +5523,35 @@ Response:+61049
           "version": 27
         }
       },
+      "f30fb1af-9ee6-4880-ae20-cf48a7078fe1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571651040000,
+          "format": {
+            "bookmark_icon": "https://blog.csdn.net/favicon.ico"
+          },
+          "id": "f30fb1af-9ee6-4880-ae20-cf48a7078fe1",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571651040000,
+          "parent_id": "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
+          "parent_table": "block",
+          "properties": {
+            "link": [
+              [
+                "https://blog.csdn.net/qq_28119741/article/details/82728810"
+              ]
+            ]
+          },
+          "type": "bookmark",
+          "version": 10
+        }
+      },
       "fa692b1c-950f-4133-a8c9-62fb52d8adb4": {
         "role": "comment_only",
         "value": {
@@ -5139,6 +5591,39 @@ Response:+61049
           },
           "type": "bookmark",
           "version": 18
+        }
+      },
+      "fac46ab8-75f7-464e-8ca0-1425f5ef7525": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "bb766504-40b6-451f-99c9-d4d051841945",
+            "6d0fbaa0-4ed5-4c99-867d-9468f639a8e7",
+            "99827ae9-7b95-40dd-97e1-5f384c668f75",
+            "2c558b37-e8f1-4091-b9cb-ba4e6630c825",
+            "32e1b96a-0b22-4e43-bdcc-51432729488f"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571707921313,
+          "id": "fac46ab8-75f7-464e-8ca0-1425f5ef7525",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571708400000,
+          "parent_id": "16752d1a-d056-4467-b31c-836bccd54c0e",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "collection_view_page"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 17
         }
       }
     },
@@ -5279,7 +5764,7 @@ Response:+61049
               "type": "title"
             }
           },
-          "version": 33
+          "version": 37
         }
       }
     },
@@ -5318,6 +5803,7 @@ Response:+61049
             "3b8d4208-f26a-4123-a21f-abbddecbe538",
             "ee6bb471-a110-437e-be54-dcdc483ba978",
             "4885d15b-df90-4b0b-b9ab-2e036253e5e1",
+            "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
             "4703d0a5-eccf-4a3a-8aea-310e9aa61be6",
             "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
             "0a6f300e-6e3f-435e-9e07-2129421956e8",
@@ -5361,7 +5847,7 @@ Response:+61049
             }
           },
           "type": "list",
-          "version": 75
+          "version": 83
         }
       }
     },
@@ -5389,7 +5875,7 @@ Response:+61049
     "type": "table"
   }
 }
-14955 1571570226089 httpcache-v1
+27251 1571713664534 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+610
@@ -5420,10 +5906,83 @@ Body:+610
     "sort": null
   }
 }
-Response:+14254
+Response:+26550
 {
   "recordMap": {
     "block": {
+      "0c34b348-b553-4c8f-83ed-a164c804c569": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "0c34b348-b553-4c8f-83ed-a164c804c569",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://blog.csdn.net/s13335358730/article/details/85219250",
+                [
+                  [
+                    "a",
+                    "https://blog.csdn.net/s13335358730/article/details/85219250"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "20f65122-cf28-4341-a81b-fb0a3152cb40": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "3957c35d-e8b1-41ff-a721-edac3023203c",
+            "618defcf-b212-4909-9b77-31aa897eaacf",
+            "0c34b348-b553-4c8f-83ed-a164c804c569",
+            "f82c3a30-02eb-4330-bee9-e7c86b776934",
+            "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82",
+            "cbf791aa-b38a-4134-815a-6d1274fc5074",
+            "2a2a63e8-4592-4f54-8f9f-e488e5000f3b",
+            "68dc502d-f4e1-41e3-9289-8df28de421fa"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576700000,
+          "id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577540000,
+          "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
+          "parent_table": "collection",
+          "properties": {
+            "prop_2": [
+              [
+                "youdao,go"
+              ]
+            ],
+            "title": [
+              [
+                "goroutine schedule"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 23
+        }
+      },
       "25dc3406-42e4-4473-8145-27a723500a9f": {
         "role": "comment_only",
         "value": {
@@ -5464,6 +6023,64 @@ Response:+14254
           "version": 21
         }
       },
+      "2a2a63e8-4592-4f54-8f9f-e488e5000f3b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "2a2a63e8-4592-4f54-8f9f-e488e5000f3b",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "P表示调度的上下文(a context for scheduling)。您可以将其视为在单个线程上运行go代码的调度程序的本地化版本。这是让我们从n:1调度程序转到m:n调度程序的重要部分。在运行时代码中，处理器称为p。"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "3957c35d-e8b1-41ff-a721-edac3023203c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "3957c35d-e8b1-41ff-a721-edac3023203c",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "http://morsmachine.dk/go-scheduler",
+                [
+                  [
+                    "a",
+                    "http://morsmachine.dk/go-scheduler"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
       "521491cc-ecd5-4f77-a1bd-4b2c5b64ce0c": {
         "role": "comment_only",
         "value": {
@@ -5498,6 +6115,64 @@ Response:+14254
           },
           "type": "page",
           "version": 30
+        }
+      },
+      "618defcf-b212-4909-9b77-31aa897eaacf": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571577531332,
+          "id": "618defcf-b212-4909-9b77-31aa897eaacf",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571577480000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "https://blog.csdn.net/baidu_23959681/article/details/83855693",
+                [
+                  [
+                    "a",
+                    "https://blog.csdn.net/baidu_23959681/article/details/83855693"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "68dc502d-f4e1-41e3-9289-8df28de421fa": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "68dc502d-f4e1-41e3-9289-8df28de421fa",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "2.即使gomaxprocs设置为1，goruntine仍是多线程的，因为如上图一个线程M0阻塞（比如系统调用）的时候，会起另一个M1线程去获取P（上下文），gomaxprocs设置为1本质是把P设置为1"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
         }
       },
       "8ba29f51-a5af-4fe3-a02b-c4f5286d626a": {
@@ -5535,6 +6210,32 @@ Response:+14254
           },
           "type": "page",
           "version": 44
+        }
+      },
+      "cbf791aa-b38a-4134-815a-6d1274fc5074": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "cbf791aa-b38a-4134-815a-6d1274fc5074",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "1.M是os thread，P是上下文，G是goruntine"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
         }
       },
       "cde74dbd-347f-4dc5-8498-bd39cf4534bb": {
@@ -5583,7 +6284,7 @@ Response:+14254
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
           "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571560380000,
+          "last_edited_time": 1571576700000,
           "parent_id": "ea3a90e6-3493-4d63-aa83-169b3e695693",
           "parent_table": "space",
           "permissions": [
@@ -5597,7 +6298,7 @@ Response:+14254
             }
           ],
           "type": "collection_view_page",
-          "version": 53,
+          "version": 55,
           "view_ids": [
             "59b782cf-74dc-4bae-84ff-e7aad94633b8",
             "1c8ff602-e606-40b7-9ec1-705bf22b9b99",
@@ -5641,6 +6342,69 @@ Response:+14254
           },
           "type": "page",
           "version": 171
+        }
+      },
+      "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576707735,
+          "id": "f2566a9d-56f0-4ef6-b20e-a078b5fcbb82",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576700000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "这里我们看到一个线程放弃了它的上下文，以便另一个线程可以运行它。调度程序确保有足够的线程运行所有上下文。上图中的m1可能只是为了处理这个系统调用而创建的，也可能来自线程缓存。系统调用线程将保留进行系统调用的goroutine，因为它在技术上仍在执行，尽管在操作系统中被阻塞。当系统调用返回时，线程必须尝试获取上下文才能运行返回的goroutine。正常的操作模式是从另一个线程中窃取上下文。如果它不能偷一个，它将把goroutine放在全局运行队列上，放在线程缓存上，然后进入睡眠状态。全局运行队列是上下文在用完本地运行队列时从中提取的运行队列。上下文还定期检查全局运行队列中的goroutine。否则，全局运行队列上的goroutine可能会因为饥饿而永远无法运行。这种对syscalls的处理是go程序运行多线程的原因，即使gomaxprocs是1。运行时使用调用系统调用的goroutine，从而留下线程。"
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 2
+        }
+      },
+      "f82c3a30-02eb-4330-bee9-e7c86b776934": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571576760000,
+          "file_ids": [
+            "c0ef82c3-f6d9-4145-943d-0f712ed5a57c"
+          ],
+          "format": {
+            "block_aspect_ratio": 0.7014925373134329,
+            "block_full_width": false,
+            "block_page_width": true,
+            "block_preserve_scale": true,
+            "block_width": 1072,
+            "display_source": "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0ef82c3-f6d9-4145-943d-0f712ed5a57c/Untitled.png"
+          },
+          "id": "f82c3a30-02eb-4330-bee9-e7c86b776934",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571576760000,
+          "parent_id": "20f65122-cf28-4341-a81b-fb0a3152cb40",
+          "parent_table": "block",
+          "properties": {
+            "source": [
+              [
+                "https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0ef82c3-f6d9-4145-943d-0f712ed5a57c/Untitled.png"
+              ]
+            ]
+          },
+          "type": "image",
+          "version": 11
         }
       }
     },
@@ -5781,7 +6545,7 @@ Response:+14254
               "type": "title"
             }
           },
-          "version": 33
+          "version": 37
         }
       }
     },
@@ -5802,6 +6566,7 @@ Response:+14254
           "name": "youdao",
           "page_sort": [
             "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
+            "20f65122-cf28-4341-a81b-fb0a3152cb40",
             "6ad8571e-8746-4c1a-9a9a-56e11f225e9c",
             "3b8d4208-f26a-4123-a21f-abbddecbe538",
             "621a2776-927c-4a8a-92c2-b680793308e6",
@@ -5822,8 +6587,25 @@ Response:+14254
             ],
             "filter_operator": "and"
           },
+          "query2": {
+            "filter": {
+              "filters": [
+                {
+                  "filter": {
+                    "operator": "enum_contains",
+                    "value": {
+                      "type": "exact",
+                      "value": "youdao"
+                    }
+                  },
+                  "property": "prop_2"
+                }
+              ],
+              "operator": "and"
+            }
+          },
           "type": "list",
-          "version": 12
+          "version": 14
         }
       }
     },
@@ -5836,9 +6618,10 @@ Response:+14254
   "result": {
     "aggregationResults": [],
     "blockIds": [
-      "8ba29f51-a5af-4fe3-a02b-c4f5286d626a"
+      "8ba29f51-a5af-4fe3-a02b-c4f5286d626a",
+      "20f65122-cf28-4341-a81b-fb0a3152cb40"
     ],
-    "total": 1,
+    "total": 2,
     "type": "table"
   }
 }
