@@ -144,7 +144,8 @@ func buildArticlesNavigation(articles *Articles) {
 func LoadArticles(d *caching_downloader.Downloader) *Articles {
 	res := &Articles{}
 	//_, err := d.DownloadPagesRecursively(notionWebsiteStartPage)
-	pages, _ := downloadPagesRecursively(d,notionWebsiteStartPage)
+	page:=CollectionViewToPages(d)
+	pages, _ := downloadPagesRecursively(d,page)
 	//must(err)
 	res.idToPage = pages
 	//res.idToPage = d.IdToPage
@@ -260,8 +261,8 @@ func filterArticlesByTag(articles []*Article, tag string, include bool) []*Artic
 	return res
 }
 
-func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) (map[string]*notionapi.Page, error) {
-	toVisit := []string{pageID}
+func downloadPagesRecursively(d *caching_downloader.Downloader,toVisit []string) (map[string]*notionapi.Page, error) {
+	//toVisit := []string{pageID}
 	downloaded := map[string]*notionapi.Page{}
 	for len(toVisit) > 0 {
 		pageID := notionapi.ToNoDashID(toVisit[0])
@@ -272,7 +273,8 @@ func downloadPagesRecursively(d *caching_downloader.Downloader,pageID string) (m
 
 		page, err := d.DownloadPage(pageID)
 		if err != nil {
-			return nil, err
+			//return nil, err
+			continue
 		}
 		downloaded[pageID] = page
 
@@ -313,7 +315,10 @@ func getSubPages(d *caching_downloader.Downloader,p *notionapi.Page) []string {
 		seenBlocks[id] = struct{}{}
 		block := p.BlockByID(id)
 		if ifQuota(d,id){
-			subPages[id] = struct{}{}
+			if p.IsSubPage(block) {
+				subPages[id] = struct{}{}
+			}
+			//subPages[id] = struct{}{}
 		}
 
 

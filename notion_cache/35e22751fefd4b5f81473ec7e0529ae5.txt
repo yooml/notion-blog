@@ -1,16 +1,16 @@
-1332 1571843551027 httpcache-v1
+982 1571843601715 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+      "id": "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
       "table": "block"
     }
   ]
 }
-Response:+1132
+Response:+783
 {
   "results": [
     {
@@ -18,40 +18,30 @@ Response:+1132
       "value": {
         "alive": true,
         "content": [
-          "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-          "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-          "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          "9151e4c2-195c-494c-8e86-e8d7ca88bb84"
         ],
-        "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "created_by_table": "notion_user",
-        "created_time": 1571572260000,
-        "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
-        "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1571843220000,
-        "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
-        "parent_table": "collection",
+        "copied_from": "bc3c8d5b-c160-47f2-bf81-4d4226c3e72b",
+        "created_by": "d70e781e-50f1-4b3f-9147-80a73ffcb175",
+        "created_time": 1570615281510,
+        "id": "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
+        "last_edited_by": "d70e781e-50f1-4b3f-9147-80a73ffcb175",
+        "last_edited_time": 1570615281510,
+        "parent_id": "480d10e1-f973-4c50-b91e-b2797038de2f",
+        "parent_table": "block",
         "properties": {
-          "prop_2": [
-            [
-              "2019.10"
-            ]
-          ],
           "title": [
             [
-              "关于"
+              "PR"
             ]
           ]
         },
-        "type": "page",
-        "version": 27
+        "type": "bulleted_list",
+        "version": 1
       }
     }
   ]
 }
-20156 1571843551030 httpcache-v1
+20539 1571843601716 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -61,95 +51,116 @@ Body:+152
     "stack": []
   },
   "limit": 50,
-  "pageId": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+  "pageId": "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
   "verticalColumns": false
 }
-Response:+19915
+Response:+20298
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
-      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+      "35e22751-fefd-4b5f-8147-3ec7e0529ae5": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "content": [
-            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+            "9151e4c2-195c-494c-8e86-e8d7ca88bb84"
           ],
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572260000,
-          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "copied_from": "bc3c8d5b-c160-47f2-bf81-4d4226c3e72b",
+          "created_by": "d70e781e-50f1-4b3f-9147-80a73ffcb175",
+          "created_time": 1570615281510,
+          "id": "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
+          "last_edited_by": "d70e781e-50f1-4b3f-9147-80a73ffcb175",
+          "last_edited_time": 1570615281510,
+          "parent_id": "480d10e1-f973-4c50-b91e-b2797038de2f",
+          "parent_table": "block",
+          "properties": {
+            "title": [
+              [
+                "PR"
+              ]
+            ]
+          },
+          "type": "bulleted_list",
+          "version": 1
+        }
+      },
+      "480d10e1-f973-4c50-b91e-b2797038de2f": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "4a308471-e969-46aa-8b7a-55b4891c0b5b",
+            "e3189783-bb18-4deb-a855-05f27a3b262c",
+            "33ab7aeb-4d46-4a0d-bb15-028a0597b96d",
+            "8d6499db-606a-4d6e-a44b-039c8544d56d",
+            "05067b5b-6676-44f7-ab70-f7fe6162cb1b",
+            "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
+            "406742e2-636e-4696-9024-4ab8bf0f5aa2",
+            "5cbb7975-8d0b-4faf-bf4a-a0e28710d399"
+          ],
+          "copied_from": "9c2e736f-e03d-4f3d-9e3e-0b38f789c6a9",
+          "created_by": "6ef08d7f-695a-4ded-9aad-108a7411a508",
+          "created_time": 1570615281510,
+          "id": "480d10e1-f973-4c50-b91e-b2797038de2f",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571843220000,
+          "last_edited_time": 1570849320000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
             "prop_2": [
               [
-                "2019.10"
+                "Important,2019.10"
               ]
             ],
             "title": [
               [
-                "关于"
+                "Potential Distribution Channels"
               ]
             ]
           },
           "type": "page",
-          "version": 27
+          "version": 10
         }
       },
-      "5f5ff874-0f16-4d18-9b50-9146c6c8c223": {
+      "9151e4c2-195c-494c-8e86-e8d7ca88bb84": {
         "role": "comment_only",
         "value": {
           "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572560000,
-          "id": "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572860000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "copied_from": "47863909-dd26-4da2-8725-fef847e50a02",
+          "created_by": "e0d8983d-9b38-4f83-889d-7d4fc44d4f62",
+          "created_time": 1570615281510,
+          "format": {
+            "bookmark_cover": "https://cdn-images-1.medium.com/max/1200/1*3Gn1apmpGrFX3QzjSr9oMQ.jpeg",
+            "bookmark_icon": "https://cdn-static-1.medium.com/_/fp/icons/favicon-rebrand-medium.3Y6xpZ-0FSdWDnPM3hSBIA.ico"
+          },
+          "id": "9151e4c2-195c-494c-8e86-e8d7ca88bb84",
+          "ignore_block_count": true,
+          "last_edited_by": "e0d8983d-9b38-4f83-889d-7d4fc44d4f62",
+          "last_edited_time": 1570615281510,
+          "parent_id": "35e22751-fefd-4b5f-8147-3ec7e0529ae5",
           "parent_table": "block",
           "properties": {
+            "description": [
+              [
+                "Note: This is one of the chapters of a book I wrote that teaches you how to get users and traction for your company step by step. You can check it out here -  Secret Sauce: A Step-By-Step Growth Hacking Tutorial. There's nothing a startup (or any company) needs quite as much as press."
+              ]
+            ],
+            "link": [
+              [
+                "https://medium.com/startup-grind/how-to-get-press-for-your-startup-the-complete-guide-b79c57318113"
+              ]
+            ],
             "title": [
               [
-                "我之前个人笔记用的是有道，现在（2019.10）准备搬到notion上去了"
+                "How To Get Press for Your Startup: The Complete Guide"
               ]
             ]
           },
-          "type": "text",
-          "version": 57
-        }
-      },
-      "c8148545-ad9b-45c4-8668-afdf95f03bbb": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572440000,
-          "id": "c8148545-ad9b-45c4-8668-afdf95f03bbb",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572440000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
-          "parent_table": "block",
-          "type": "text",
-          "version": 6
+          "type": "bookmark",
+          "version": 1
         }
       },
       "cf7b1a37-66ea-499a-90e5-68028152b10a": {
@@ -193,41 +204,6 @@ Response:+19915
             "fb872551-6f7e-4e82-847c-279c0ba0a58d",
             "0cdc650b-701f-410e-b93c-1d9f21719bc6"
           ]
-        }
-      },
-      "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572320000,
-          "id": "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571647740000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
-          "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "这是一个基于notion开发的个人博客，修改自kjk大佬的"
-              ],
-              [
-                "blog",
-                [
-                  [
-                    "a",
-                    "https://github.com/kjk/blog"
-                  ]
-                ]
-              ]
-            ]
-          },
-          "type": "text",
-          "version": 35
         }
       }
     },
@@ -672,16 +648,18 @@ Response:+19915
       }
     },
     "notion_user": {
-      "7021cba6-c816-4eb3-b5b4-4fdd150aca5b": {
+      "6ef08d7f-695a-4ded-9aad-108a7411a508": {
         "role": "reader",
         "value": {
-          "email": "947801604@qq.com",
-          "family_name": "yu",
-          "given_name": "menglei",
-          "id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "clipper_onboarding_completed": true,
+          "email": "example1123@makenotion.com",
+          "family_name": "Surganov",
+          "given_name": "Sergey",
+          "id": "6ef08d7f-695a-4ded-9aad-108a7411a508",
           "mobile_onboarding_completed": true,
           "onboarding_completed": true,
-          "version": 9
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/c4def651-dc94-408d-80a7-ad0bdaad39db/download.png",
+          "version": 33
         }
       },
       "d70e781e-50f1-4b3f-9147-80a73ffcb175": {
@@ -695,12 +673,24 @@ Response:+19915
           "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/edb32e57-6099-49c2-aa2c-9fac6a16e1b0/Screen_Shot_2017-11-20_at_4.55.34_PM.png",
           "version": 33
         }
+      },
+      "e0d8983d-9b38-4f83-889d-7d4fc44d4f62": {
+        "role": "reader",
+        "value": {
+          "email": "example65522@makenotion.com",
+          "family_name": "Jensen",
+          "given_name": "Leslie",
+          "id": "e0d8983d-9b38-4f83-889d-7d4fc44d4f62",
+          "onboarding_completed": true,
+          "profile_photo": "https://s3-us-west-2.amazonaws.com/public.notion-static.com/61140555-27f6-4bdd-ac33-40154dcc3148/Screen_Shot_2017-11-20_at_4.53.16_PM.png",
+          "version": 33
+        }
       }
     },
     "space": {}
   }
 }
-643 1571843551030 httpcache-v1
+643 1571843601716 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -731,7 +721,7 @@ Response:+444
     }
   ]
 }
-79230 1571843551036 httpcache-v1
+79230 1571843601727 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+412
@@ -2891,7 +2881,7 @@ Response:+78727
     "type": "table"
   }
 }
-38489 1571843551038 httpcache-v1
+38489 1571843601729 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+806
@@ -3995,7 +3985,7 @@ Response:+37592
     "type": "table"
   }
 }
-67352 1571843551041 httpcache-v1
+67352 1571843601732 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+613
@@ -5865,7 +5855,7 @@ Response:+66648
     "type": "table"
   }
 }
-27251 1571843551042 httpcache-v1
+27251 1571843601733 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+610

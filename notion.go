@@ -1,7 +1,6 @@
 package main
 
 import (
-	"encoding/json"
 	"fmt"
 	"github.com/kjk/notionapi"
 	"github.com/kjk/notionapi/caching_downloader"
@@ -129,6 +128,13 @@ func eventObserver(ev interface{}) {
 }
 
 func main()  {
+	defer func() { // 必须要先声明defer，否则不能捕获到panic异常
+		log.Println("d")
+		if err := recover(); err != nil {
+			log.Println(err) // 这里的err其实就是panic传入的内容
+		}
+		log.Println("e")
+	}()
 	os.MkdirAll("netlify_static", 0755)
 
 	client := &notionapi.Client{}
@@ -154,7 +160,7 @@ func main()  {
 	cache, _ := caching_downloader.NewDirectoryCache(cacheDir)
 	//must(err)
 	d := caching_downloader.New(cache, client)
-	s:=[]string{"cf7b1a3766ea499a90e568028152b10a"}
+	/*s:=[]string{"cf7b1a3766ea499a90e568028152b10a"}
 	//s1 := append(s, "cf7b1a3766ea499a90e568028152b10a")
 	out,_:=d.Client.GetBlockRecords(s)
 	r:=out.Results
@@ -190,11 +196,11 @@ func main()  {
 				for h,g:=range coll.RecordMap.CollectionViews{
 					var bb CollectionView
 					dd:=json.Unmarshal([]byte(g.Value),&bb)
-					log.Println("rr[0].Block.ViewIDs:",h,string(g.Value),dd,bb.Query.Page_sort,bb.)
+					log.Println("rr[0].Block.ViewIDs:",h,string(g.Value),dd,bb.Page_sort)
 				}
 			}
 		}
-	}
+	}*/
 	//log.Println(out.RawJSON["results"])
 	d.EventObserver = eventObserver
 	d.RedownloadNewerVersions = true
@@ -203,13 +209,6 @@ func main()  {
 	rebuildAll(d)
 }
 
-type CollectionView struct {
-	Id string
-	Type string
-	Name string
-	Query Queryd
-}
 
-type Queryd struct {
-	Page_sort []string
-}
+
+

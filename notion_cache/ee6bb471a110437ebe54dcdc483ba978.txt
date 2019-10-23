@@ -1,16 +1,16 @@
-1332 1571843551027 httpcache-v1
+1638 1571843529142 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+      "id": "ee6bb471-a110-437e-be54-dcdc483ba978",
       "table": "block"
     }
   ]
 }
-Response:+1132
+Response:+1438
 {
   "results": [
     {
@@ -18,19 +18,25 @@ Response:+1132
       "value": {
         "alive": true,
         "content": [
-          "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-          "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-          "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          "c3941c9f-b81a-430a-86f5-3574972da75b",
+          "400be26e-cc2c-47df-a0c2-210ac82783f1",
+          "bd595012-3aa9-467d-84f3-4654f03d3a27",
+          "87884d97-4426-4165-8b85-504ee67ec989",
+          "a3199024-9bdd-49c2-a17b-2f55bc596b84",
+          "a7a88aa0-a0d6-4734-9657-bd59aa1d4865",
+          "e8810d48-fd79-432b-bc13-3e7a68ca282c",
+          "e651a08c-64a7-4e46-ae29-eb641ef9d0c3",
+          "211d4556-0b09-4b3e-aa40-6da3793d34d0"
         ],
         "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "created_by_table": "notion_user",
-        "created_time": 1571572260000,
-        "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+        "created_time": 1571144580000,
+        "id": "ee6bb471-a110-437e-be54-dcdc483ba978",
         "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
         "last_edited_by_table": "notion_user",
-        "last_edited_time": 1571843220000,
+        "last_edited_time": 1571470860000,
         "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
         "parent_table": "collection",
         "properties": {
@@ -41,17 +47,17 @@ Response:+1132
           ],
           "title": [
             [
-              "关于"
+              "bookmark.bak"
             ]
           ]
         },
         "type": "page",
-        "version": 27
+        "version": 69
       }
     }
   ]
 }
-20156 1571843551030 httpcache-v1
+26248 1571843529144 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -61,95 +67,230 @@ Body:+152
     "stack": []
   },
   "limit": 50,
-  "pageId": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+  "pageId": "ee6bb471-a110-437e-be54-dcdc483ba978",
   "verticalColumns": false
 }
-Response:+19915
+Response:+26007
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
-      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+      "211d4556-0b09-4b3e-aa40-6da3793d34d0": {
         "role": "comment_only",
         "value": {
           "alive": true,
-          "content": [
-            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
-          ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572260000,
-          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "created_time": 1571212860000,
+          "id": "211d4556-0b09-4b3e-aa40-6da3793d34d0",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571843220000,
-          "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
-          "parent_table": "collection",
+          "last_edited_time": 1571212860000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
+          "type": "text",
+          "version": 6
+        }
+      },
+      "400be26e-cc2c-47df-a0c2-210ac82783f1": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571144700121,
+          "format": {
+            "bookmark_icon": "https://github.githubassets.com/favicon.ico"
+          },
+          "id": "400be26e-cc2c-47df-a0c2-210ac82783f1",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571144700000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
           "properties": {
-            "prop_2": [
+            "description": [
               [
-                "2019.10"
+                "You can't perform that action at this time. You signed in with another tab or window. You signed out in another tab or window. Reload to refresh your session. Reload to refresh your session."
+              ]
+            ],
+            "link": [
+              [
+                "https://github.com/kjk/notionapi/blob/master/caching_downloader/caching_downloader.go#L389"
               ]
             ],
             "title": [
               [
-                "关于"
+                "kjk/notionapi"
               ]
             ]
           },
-          "type": "page",
-          "version": 27
+          "type": "bookmark",
+          "version": 9
         }
       },
-      "5f5ff874-0f16-4d18-9b50-9146c6c8c223": {
+      "87884d97-4426-4165-8b85-504ee67ec989": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572560000,
-          "id": "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
+          "created_time": 1571212500000,
+          "id": "87884d97-4426-4165-8b85-504ee67ec989",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572860000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_time": 1571277720000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
+          "properties": {
+            "checked": [
+              [
+                "No"
+              ]
+            ],
+            "title": [
+              [
+                "ss",
+                [
+                  [
+                    "a",
+                    "/article/8ba29f51a5af4fe3a02bc4f5286d626a.html"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "old-resume",
+                [
+                  [
+                    "a",
+                    "/resume-old.html"
+                  ]
+                ]
+              ],
+              [
+                " "
+              ],
+              [
+                "own",
+                [
+                  [
+                    "a",
+                    "/article/ee6bb471a110437ebe54dcdc483ba978.html"
+                  ]
+                ]
+              ]
+            ]
+          },
+          "type": "text",
+          "version": 68
+        }
+      },
+      "a3199024-9bdd-49c2-a17b-2f55bc596b84": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571275800000,
+          "id": "a3199024-9bdd-49c2-a17b-2f55bc596b84",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571277960000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
           "parent_table": "block",
           "properties": {
             "title": [
               [
-                "我之前个人笔记用的是有道，现在（2019.10）准备搬到notion上去了"
+                "踩坑记录："
               ]
             ]
           },
           "type": "text",
-          "version": 57
+          "version": 27
         }
       },
-      "c8148545-ad9b-45c4-8668-afdf95f03bbb": {
+      "a7a88aa0-a0d6-4734-9657-bd59aa1d4865": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572440000,
-          "id": "c8148545-ad9b-45c4-8668-afdf95f03bbb",
+          "created_time": 1571275860000,
+          "id": "a7a88aa0-a0d6-4734-9657-bd59aa1d4865",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572440000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_time": 1571278080000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
           "parent_table": "block",
           "type": "text",
-          "version": 6
+          "version": 22
+        }
+      },
+      "bd595012-3aa9-467d-84f3-4654f03d3a27": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571206560000,
+          "format": {
+            "block_color": "red",
+            "bookmark_cover": "https://avatars3.githubusercontent.com/u/7935?s=400\u0026v=4",
+            "bookmark_icon": "https://github.githubassets.com/favicon.ico"
+          },
+          "id": "bd595012-3aa9-467d-84f3-4654f03d3a27",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276340000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
+          "properties": {
+            "description": [
+              [
+                "This is a Go program that generates my website/blog https://blog.kowalczyk.info. I use Notion to write most of the content. This custom Go program downloads pages from Notion, caches it in notion_cache directory, converts to static HTML files and deploys to Netlify. To extract my content from Notion I reverse engineered their API and wrote a Go library."
+              ]
+            ],
+            "link": [
+              [
+                "https://github.com/kjk/blog"
+              ]
+            ],
+            "title": [
+              [
+                "kjk/blog"
+              ]
+            ]
+          },
+          "type": "bookmark",
+          "version": 12
+        }
+      },
+      "c3941c9f-b81a-430a-86f5-3574972da75b": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571144640000,
+          "format": {
+            "bookmark_icon": "https://godoc.org/favicon.ico"
+          },
+          "id": "c3941c9f-b81a-430a-86f5-3574972da75b",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571144640000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
+          "properties": {
+            "description": [
+              [
+                "import \"github.com/kjk/notionapi/caching_downloader\" cache.go caching_downloader.go serialize_http_cache.go GetCacheFileNameFromURL returns name of the file in cache for this URL."
+              ]
+            ],
+            "link": [
+              [
+                "https://godoc.org/github.com/kjk/notionapi/caching_downloader"
+              ]
+            ],
+            "title": [
+              [
+                "caching_downloader - GoDoc"
+              ]
+            ]
+          },
+          "type": "bookmark",
+          "version": 10
         }
       },
       "cf7b1a37-66ea-499a-90e5-68028152b10a": {
@@ -195,28 +336,36 @@ Response:+19915
           ]
         }
       },
-      "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd": {
+      "e651a08c-64a7-4e46-ae29-eb641ef9d0c3": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572320000,
-          "id": "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
+          "created_time": 1571212860000,
+          "id": "e651a08c-64a7-4e46-ae29-eb641ef9d0c3",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571647740000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_time": 1571212860000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "parent_table": "block",
+          "type": "text",
+          "version": 7
+        }
+      },
+      "e8810d48-fd79-432b-bc13-3e7a68ca282c": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1571276340000,
+          "id": "e8810d48-fd79-432b-bc13-3e7a68ca282c",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1571276400000,
+          "parent_id": "ee6bb471-a110-437e-be54-dcdc483ba978",
           "parent_table": "block",
           "properties": {
             "title": [
               [
-                "这是一个基于notion开发的个人博客，修改自kjk大佬的"
-              ],
-              [
-                "blog",
+                "kjk的博客",
                 [
                   [
                     "a",
@@ -227,7 +376,49 @@ Response:+19915
             ]
           },
           "type": "text",
-          "version": 35
+          "version": 16
+        }
+      },
+      "ee6bb471-a110-437e-be54-dcdc483ba978": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "content": [
+            "c3941c9f-b81a-430a-86f5-3574972da75b",
+            "400be26e-cc2c-47df-a0c2-210ac82783f1",
+            "bd595012-3aa9-467d-84f3-4654f03d3a27",
+            "87884d97-4426-4165-8b85-504ee67ec989",
+            "a3199024-9bdd-49c2-a17b-2f55bc596b84",
+            "a7a88aa0-a0d6-4734-9657-bd59aa1d4865",
+            "e8810d48-fd79-432b-bc13-3e7a68ca282c",
+            "e651a08c-64a7-4e46-ae29-eb641ef9d0c3",
+            "211d4556-0b09-4b3e-aa40-6da3793d34d0"
+          ],
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_by_table": "notion_user",
+          "created_time": 1571144580000,
+          "id": "ee6bb471-a110-437e-be54-dcdc483ba978",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_by_table": "notion_user",
+          "last_edited_time": 1571470860000,
+          "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
+          "parent_table": "collection",
+          "properties": {
+            "prop_2": [
+              [
+                "2019.10"
+              ]
+            ],
+            "title": [
+              [
+                "bookmark.bak"
+              ]
+            ]
+          },
+          "type": "page",
+          "version": 69
         }
       }
     },
@@ -700,7 +891,7 @@ Response:+19915
     "space": {}
   }
 }
-643 1571843551030 httpcache-v1
+643 1571843529144 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -731,7 +922,7 @@ Response:+444
     }
   ]
 }
-79230 1571843551036 httpcache-v1
+79230 1571843529148 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+412
@@ -2891,7 +3082,7 @@ Response:+78727
     "type": "table"
   }
 }
-38489 1571843551038 httpcache-v1
+38489 1571843529149 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+806
@@ -3995,7 +4186,7 @@ Response:+37592
     "type": "table"
   }
 }
-67352 1571843551041 httpcache-v1
+67352 1571843529152 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+613
@@ -5865,7 +6056,7 @@ Response:+66648
     "type": "table"
   }
 }
-27251 1571843551042 httpcache-v1
+27251 1571843529153 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+610

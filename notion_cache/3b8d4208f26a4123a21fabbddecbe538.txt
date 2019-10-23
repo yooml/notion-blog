@@ -1,16 +1,16 @@
-1332 1571843551027 httpcache-v1
+1260 1571843524143 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
 {
   "requests": [
     {
-      "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+      "id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
       "table": "block"
     }
   ]
 }
-Response:+1132
+Response:+1060
 {
   "results": [
     {
@@ -18,40 +18,42 @@ Response:+1132
       "value": {
         "alive": true,
         "content": [
-          "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-          "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-          "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+          "ac36c509-1445-4905-a2ef-263dd8f5a628",
+          "e067b78e-0a03-4b43-86bb-a359396dc0cc",
+          "38be6c1c-c52e-414b-adb1-6cb9e14707ee"
         ],
         "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "created_by_table": "notion_user",
-        "created_time": 1571572260000,
-        "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+        "created_time": 1570849260000,
+        "id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
         "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-        "last_edited_by_table": "notion_user",
-        "last_edited_time": 1571843220000,
+        "last_edited_time": 1571366340000,
         "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
         "parent_table": "collection",
         "properties": {
           "prop_2": [
             [
-              "2019.10"
+              "2019.10,编码"
             ]
           ],
           "title": [
             [
-              "关于"
+              "mahonia",
+              [
+                [
+                  "a",
+                  "http://github.com/axgle/mahonia"
+                ]
+              ]
             ]
           ]
         },
         "type": "page",
-        "version": 27
+        "version": 30
       }
     }
   ]
 }
-20156 1571843551030 httpcache-v1
+20372 1571843524144 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/loadPageChunk
 Body:+152
@@ -61,95 +63,114 @@ Body:+152
     "stack": []
   },
   "limit": 50,
-  "pageId": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+  "pageId": "3b8d4208-f26a-4123-a21f-abbddecbe538",
   "verticalColumns": false
 }
-Response:+19915
+Response:+20131
 {
   "cursor": {
     "stack": []
   },
   "recordMap": {
     "block": {
-      "38e8c2a0-cf71-46a6-8cc2-4f847f94d800": {
+      "38be6c1c-c52e-414b-adb1-6cb9e14707ee": {
+        "role": "comment_only",
+        "value": {
+          "alive": true,
+          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "created_time": 1570849385708,
+          "id": "38be6c1c-c52e-414b-adb1-6cb9e14707ee",
+          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
+          "last_edited_time": 1570849440000,
+          "parent_id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
+          "parent_table": "block",
+          "properties": {
+            "language": [
+              [
+                "Go"
+              ]
+            ],
+            "title": [
+              [
+                "func ConvertToByte(src string, srcCode string, targetCode string) []byte {\n\tsrcCoder := mahonia.NewDecoder(srcCode)\n\tsrcResult := srcCoder.ConvertString(src)\n\ttagCoder := mahonia.NewDecoder(targetCode)\n\t_, cdata, _ := tagCoder.Translate([]byte(srcResult), true)\n\treturn cdata\n}\ntest1:=ConvertToByte(string(test), \"utf8\", \"utf8\")\ntagCoder := mahonia.NewDecoder(\"utf8\")\n_, cdata, _ := tagCoder.Translate(test, true)\nlog.Println(string(test1),string(cdata))"
+              ]
+            ]
+          },
+          "type": "code",
+          "version": 14
+        }
+      },
+      "3b8d4208-f26a-4123-a21f-abbddecbe538": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "content": [
-            "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
-            "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
-            "c8148545-ad9b-45c4-8668-afdf95f03bbb"
+            "ac36c509-1445-4905-a2ef-263dd8f5a628",
+            "e067b78e-0a03-4b43-86bb-a359396dc0cc",
+            "38be6c1c-c52e-414b-adb1-6cb9e14707ee"
           ],
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572260000,
-          "id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "created_time": 1570849260000,
+          "id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571843220000,
+          "last_edited_time": 1571366340000,
           "parent_id": "532d1793-ea8e-487f-b7b5-18a20070d1a7",
           "parent_table": "collection",
           "properties": {
             "prop_2": [
               [
-                "2019.10"
+                "2019.10,编码"
               ]
             ],
             "title": [
               [
-                "关于"
+                "mahonia",
+                [
+                  [
+                    "a",
+                    "http://github.com/axgle/mahonia"
+                  ]
+                ]
               ]
             ]
           },
           "type": "page",
-          "version": 27
+          "version": 30
         }
       },
-      "5f5ff874-0f16-4d18-9b50-9146c6c8c223": {
+      "ac36c509-1445-4905-a2ef-263dd8f5a628": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572560000,
-          "id": "5f5ff874-0f16-4d18-9b50-9146c6c8c223",
+          "created_time": 1570849260000,
+          "format": {
+            "bookmark_icon": "https://github.githubassets.com/favicon.ico"
+          },
+          "id": "ac36c509-1445-4905-a2ef-263dd8f5a628",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572860000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_time": 1570849260000,
+          "parent_id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
           "parent_table": "block",
           "properties": {
+            "description": [
+              [
+                "character-set conversion library implemented in Go. Mahonia is a character-set conversion library implemented in Go. All data is compiled into the executable; it doesn't need any external data files. based on http://code.google.com/p/mahonia/ go get github.com/axgle/mahonia package main import \"fmt\" import \"github.com/axgle/mahonia\" func main(){ enc:=mahonia.NewEncoder(\"gbk\") //converts a string from UTF-8 to gbk encoding."
+              ]
+            ],
+            "link": [
+              [
+                "http://github.com/axgle/mahonia"
+              ]
+            ],
             "title": [
               [
-                "我之前个人笔记用的是有道，现在（2019.10）准备搬到notion上去了"
+                "axgle/mahonia"
               ]
             ]
           },
-          "type": "text",
-          "version": 57
-        }
-      },
-      "c8148545-ad9b-45c4-8668-afdf95f03bbb": {
-        "role": "comment_only",
-        "value": {
-          "alive": true,
-          "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572440000,
-          "id": "c8148545-ad9b-45c4-8668-afdf95f03bbb",
-          "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571572440000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
-          "parent_table": "block",
-          "type": "text",
-          "version": 6
+          "type": "bookmark",
+          "version": 10
         }
       },
       "cf7b1a37-66ea-499a-90e5-68028152b10a": {
@@ -195,39 +216,19 @@ Response:+19915
           ]
         }
       },
-      "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd": {
+      "e067b78e-0a03-4b43-86bb-a359396dc0cc": {
         "role": "comment_only",
         "value": {
           "alive": true,
           "created_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "created_by_table": "notion_user",
-          "created_time": 1571572320000,
-          "id": "d5e28cf2-5a3e-4274-83fa-6ab180a74ebd",
+          "created_time": 1570849320000,
+          "id": "e067b78e-0a03-4b43-86bb-a359396dc0cc",
           "last_edited_by": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_id": "7021cba6-c816-4eb3-b5b4-4fdd150aca5b",
-          "last_edited_by_table": "notion_user",
-          "last_edited_time": 1571647740000,
-          "parent_id": "38e8c2a0-cf71-46a6-8cc2-4f847f94d800",
+          "last_edited_time": 1570849320000,
+          "parent_id": "3b8d4208-f26a-4123-a21f-abbddecbe538",
           "parent_table": "block",
-          "properties": {
-            "title": [
-              [
-                "这是一个基于notion开发的个人博客，修改自kjk大佬的"
-              ],
-              [
-                "blog",
-                [
-                  [
-                    "a",
-                    "https://github.com/kjk/blog"
-                  ]
-                ]
-              ]
-            ]
-          },
           "type": "text",
-          "version": 35
+          "version": 6
         }
       }
     },
@@ -700,7 +701,7 @@ Response:+19915
     "space": {}
   }
 }
-643 1571843551030 httpcache-v1
+643 1571843524144 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/getRecordValues
 Body:+110
@@ -731,7 +732,7 @@ Response:+444
     }
   ]
 }
-79230 1571843551036 httpcache-v1
+79230 1571843524153 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+412
@@ -2891,7 +2892,7 @@ Response:+78727
     "type": "table"
   }
 }
-38489 1571843551038 httpcache-v1
+38489 1571843524155 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+806
@@ -3995,7 +3996,7 @@ Response:+37592
     "type": "table"
   }
 }
-67352 1571843551041 httpcache-v1
+67352 1571843524158 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+613
@@ -5865,7 +5866,7 @@ Response:+66648
     "type": "table"
   }
 }
-27251 1571843551042 httpcache-v1
+27251 1571843524159 httpcache-v1
 Method: POST
 URL: https://www.notion.so/api/v3/queryCollection
 Body:+610
