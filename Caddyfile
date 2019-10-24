@@ -71,6 +71,34 @@ rewrite "^/articles/go-cookbook.html$" {
     to /book/go-cookbook.html
 }
 
+rewrite "^/tag/youdao$" {
+    to /article/archives-by-tag-youdao.html
+}
+
+rewrite "^/tag/go$" {
+    to /article/archives-by-tag-go.html
+}
+
+rewrite "^/tag/编码$" {
+    to /article/archives-by-tag-.html
+}
+
+rewrite "^/tag/ss$" {
+    to /article/archives-by-tag-ss.html
+}
+
+rewrite "^/tag/2019.10$" {
+    to /article/archives-by-tag-2019.10.html
+}
+
+rewrite "^/tag/Important$" {
+    to /article/archives-by-tag-important.html
+}
+
+rewrite "^/tag/notion$" {
+    to /article/archives-by-tag-notion.html
+}
+
 rewrite "^/tools/generate-unique-id$" {
     to /tools/generate-unique-id.html
 }

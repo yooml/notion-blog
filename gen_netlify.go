@@ -2,9 +2,11 @@ package main
 
 import (
 	"fmt"
+	"github.com/kjk/notionapi/caching_downloader"
 	"html/template"
 	"io"
 	"io/ioutil"
+	"log"
 	"math/rand"
 	"net/url"
 	"os"
@@ -115,7 +117,8 @@ func netlifyWriteFile(fileName string, d []byte) {
 }
 
 func netlifyRequestGetFullHost() string {
-	return "https://blog.kowalczyk.info"
+	//return "https://blog.kowalczyk.info"
+	return "http://www.minazuki.cn"
 }
 
 // https://www.linkedin.com/shareArticle?mini=true&;url=https://nodesource.com/blog/why-the-new-v8-is-so-damn-fast"
@@ -190,7 +193,8 @@ func buildTags(articles []*Article) []*TagInfo {
 
 func netlifyWriteArticlesArchiveForTag(store *Articles, tag string, w io.Writer) error {
 	path := "/archives.html"
-	articles := store.getBlogNotHidden()
+	//articles := store.getBlogNotHidden()
+	articles := store.articles
 	if tag != "" {
 		articles = filterArticlesByTag(articles, tag, true)
 		// must manually resolve conflict due to urlify
@@ -290,10 +294,30 @@ func genChangelog(store *Articles, w io.Writer) error {
 	return execTemplate("/changelog.html", tmplChangelog, model, w)
 }
 
-func genPerTagArchives(store *Articles) {
+func genPerTagArchives(store *Articles,d *caching_downloader.Downloader) {
 	// tag/<tagname>
 	tags := map[string]struct{}{}
-	for _, article := range store.getBlogNotHidden() {
+	//for _, article := range store.getBlogNotHidden() {
+	for _, article := range store.articles {
+		dd,err:=d.Client.GetBlockRecords([]string{article.ID})
+		if err!=nil{
+			continue
+		}
+		//log.Println("dd.Results[0].Block.Properties:",dd.Results[0].Block.Properties["prop_2"].([]interface{})[0].([]interface{})[0].(string))
+		//if dd.Results[0].Block.Properties["prop_2"].([]interface{})[0].([]interface{})[0]!=nil {
+		//}
+		if dd.Results[0].Block !=nil{
+			if dd.Results[0].Block.Properties["prop_2"] !=nil{
+				if dd.Results[0].Block.Properties["prop_2"].([]interface{})[0] !=nil{
+				if dd.Results[0].Block.Properties["prop_2"].([]interface{})[0].([]interface{})[0] !=nil {
+					c := strings.Split(dd.Results[0].Block.Properties["prop_2"].([]interface{})[0].([]interface{})[0].(string), ",")
+					article.Tags = c
+				}
+				}
+			}
+		}
+		log.Println("article.Tags",article.Tags,article.ID)
+		//if article.Tags==nil
 		for _, tag := range article.Tags {
 			tags[tag] = struct{}{}
 		}
@@ -433,7 +457,7 @@ func genToolGenerateUniqueID(store *Articles, w io.Writer) error {
 	return execTemplate(path, tmplGenerateUniqueID, model, w)
 }
 
-func netlifyBuild(store *Articles) {
+func netlifyBuild(store *Articles,d *caching_downloader.Downloader) {
 	// verify we're in the right directory
 	_, err := os.Stat("netlify_static")
 	panicIfErr(err)
@@ -469,7 +493,7 @@ func netlifyBuild(store *Articles) {
 	}
 
 	genArchives(store, nil)
-	genPerTagArchives(store)
+	genPerTagArchives(store,d)
 
 	genSitemap(store, nil)
 

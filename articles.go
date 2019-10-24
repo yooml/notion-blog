@@ -174,6 +174,7 @@ func LoadArticles(d *caching_downloader.Downloader) *Articles {
 		article.BodyHTML = string(html)
 		article.HTMLBody = template.HTML(article.BodyHTML)
 		article.Images = append(article.Images, images...)
+		//log.Println("article.Tags+++++++:",article)
 	}
 
 	buildArticlesNavigation(res)
@@ -246,7 +247,9 @@ func filterArticlesByTag(articles []*Article, tag string, include bool) []*Artic
 	res := make([]*Article, 0)
 	for _, a := range articles {
 		hasTag := false
+		log.Println("======")
 		for _, t := range a.Tags {
+			log.Println("---------t:",t)
 			if tag == t {
 				hasTag = true
 				break
@@ -274,7 +277,7 @@ func downloadPagesRecursively(d *caching_downloader.Downloader,toVisit []string)
 		page, err := d.DownloadPage(pageID)
 		if err != nil {
 			//return nil, err
-			continue
+			continue  //page找不到就跳过
 		}
 		downloaded[pageID] = page
 
@@ -314,13 +317,12 @@ func getSubPages(d *caching_downloader.Downloader,p *notionapi.Page) []string {
 		}
 		seenBlocks[id] = struct{}{}
 		block := p.BlockByID(id)
-		if ifQuota(d,id){
-			if p.IsSubPage(block) {
-				subPages[id] = struct{}{}
-			}
+		//if ifQuota(d,id){
 			//subPages[id] = struct{}{}
+		//}
+		if p.IsSubPage(block) {
+			subPages[id] = struct{}{}
 		}
-
 
 		//page, _ := d.DownloadPage(notionapi.ToNoDashID(id))
 		//bblocksToVisit := append([]string{}, page.Root().ContentIDs...)

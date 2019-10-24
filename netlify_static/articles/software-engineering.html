@@ -1,0 +1,190 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="always">
+    <link rel="alternate" type="application/atom+xml" title="RSS 2.0" href="/atom.xml">
+    <link rel="canonical" href="https://blog.kowalczyk.info/articles/software-engineering.html">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kjk">
+    <meta name="twitter:title" content="Things I Learned the Hard Way: Engineering and Computer Science in the Real World">
+    <meta name="twitter:creator" content="@kjk">
+
+
+    <meta property="og:title" content="Things I Learned the Hard Way: Engineering and Computer Science in the Real World">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.kowalczyk.info/articles/software-engineering.html">
+
+    <title>Things I Learned the Hard Way: Engineering and Computer Science in the Real World</title>
+
+    <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        function showcontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "block";
+            el = document.getElementById("contact-page-url");
+            var uri = window.location.href;
+            uri = uri.replace("#", "");
+            el.value = uri;
+            el = document.getElementById("msg-for-chris");
+            el.focus();
+        }
+        function hidecontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "none";
+        }
+        function isWindows() {
+            return window.navigator &&
+                window.navigator.platform &&
+                window.navigator.platform.indexOf('Win') >= 0
+        }
+        function maybeShowAd() {
+            if (!isWindows()) {
+                return;
+            }
+            var el = document.getElementById("ad-software-2");
+            el.style.display = "flex";
+        }
+        function onLoaded() {
+            maybeShowAd();
+        }
+        document.addEventListener("DOMContentLoaded", onLoaded);
+    </script>
+    <script type="text/javascript">
+        var galleries = {};
+        function buildGalleriesInfo() {
+            var els = document.getElementsByTagName("img");
+            var n = els.length;
+            for (var i = 0; i < n; i++) {
+                var el = els[i];
+                var id = el.id;
+                if (!id.startsWith("id-thumb-img-")) {
+                    continue
+                }
+                id = id.replace("id-thumb-img-", "")
+
+                var parts = id.split("-");
+                var galleryID = parseInt(parts[0]);
+                var imageNo = parseInt(parts[1]);
+                var galleryInfo = galleries[galleryID] || {};
+                galleryInfo[imageNo] = el.src;
+                galleries[galleryID] = galleryInfo;
+            }
+            var ids = Object.keys(galleries);
+            for (var gid of ids) {
+                var galleryInfo = galleries[gid];
+                galleryInfo.nImages = Object.keys(galleryInfo).length;
+                galleryInfo.currImageNo = 0;
+                changeShot(gid, 0);
+            }
+        }
+
+        function changeShot(galleryID, imgNo) {
+            var gi = galleries[galleryID];
+            gi.currImageNo = imgNo;
+            var url = gi[imgNo];
+            var id = "id-gallery-" + galleryID;
+            var el = document.getElementById(id);
+            el.src = url;
+
+            for (var i = 0; i < gi.nImages; i++) {
+                id = "id-thumb-" + galleryID + "-" + i;
+                el = document.getElementById(id);
+                if (i == imgNo) {
+                    el.classList.add("selected-img");
+                } else {
+                    el.classList.remove("selected-img");
+                }
+            }
+            var els = document.getElementsByTagName("div");
+            var nEls = els.length;
+        }
+
+        function imgNext(galleryID) {
+            var gi = galleries[galleryID];
+            var nImages = gi.nImages;
+            var imgNo = gi.currImageNo;
+            imgNo = (imgNo + 1) % nImages;
+            changeShot(galleryID, imgNo);
+        }
+        function imgPrev(galleryID) {
+            var gi = galleries[galleryID];
+            var imgNo = gi.currImageNo - 1;
+            if (imgNo < 0) {
+                imgNo = gi.nImages - 1;
+            }
+            changeShot(galleryID, imgNo);
+        }
+        document.addEventListener("DOMContentLoaded", buildGalleriesInfo);
+    </script>
+
+</head>
+
+<body>
+<div id="content">
+    <div id="post">
+        <div class="title">
+            <a href="/">Home</a> /
+            <a href="/article/ec1723d039f34a5ca30568a0deb2ad76/documents">Documents</a> /  Things I Learned the Hard Way: Engineering and Computer Science in the Real World
+
+
+            <a class="edit-link" href="https://notion.so/da7f7cb500084dd386352d7bc4151788" rel="nofollow" target="_blank">edit</a>
+
+        </div>
+
+        <div id="ad-software-2">
+            <div>
+                Try <a href="https://www.documentalist.io/like-dash-for-windows.html" target="_blank">Documentalist</a>, my app that offers fast, offline access to 190+ programmer API docs.
+            </div>
+        </div>
+
+
+
+        <div>
+            <p></p><div class="notion-page" id="da7f7cb5-0008-4dd3-8635-2d7bc4151788"><h2 id="09f70af2-0fdf-4ca7-b940-4d5fd62f0618" class="">Introduction</h2><div id="81a53d3d-b3d8-4919-bf66-cb96c435dc29" class="">This essay is a summary of points made by David Parmenter during a&nbsp;<a href="http://www.aduni.org/colloquia/parmenter/">talk</a>&nbsp;given at ArsDigita University. The university lost its funding and no longer exists but wonderful lectures and colloquia are still on-line. I've you're learning Computer Sciences, I highly recommend to watch them. You can watch them on-line (<a href="https://www.youtube.com/watch?v=vj_06ZDN6vY">part 1</a>,&nbsp;<a href="https://www.youtube.com/watch?v=44iUKKtBuw8">part 2</a>) or&nbsp;<a href="http://www.aduni.org/colloquia/parmenter/">download</a>&nbsp;for offline viewing.</div><h2 id="079bd614-a77a-4826-9eaa-a565f943085f" class="">Summary of what does David says</h2><div id="88c4a0d1-223d-4f71-b152-f77bfe3acda0" class="">Software is complex and hard. The big issue is trying to get the complexity under control. "Code like hell" is not a good way to do it. No process is necessarily better than other, but a process is much better than no process. Extreme Programming: especially the testing perspective (develop tests first).</div><div id="65f0ee8e-75a8-4bf5-9747-f5b1702f3f0e" class="">Talk to the costumer, even if you're just a programmer. Be costumer focused.</div><div id="2b7979d6-6062-4af3-93e3-86613cbc8793" class="">Ask questions, you might learn something. Network with your peers. Don't work for or with bozos. Interview is a both-way: they evaluate you, you evaluate them.</div><div id="7931384b-d43f-4037-bb21-31423d9cd9b8" class="">Make use out of down-time. Don't play solitaire, go grab the source code you haven't seen and start reading it. Learn new stuff. Read open-source stuff.</div><div id="27356384-c272-4436-be48-463bf725f242" class="">Build the debugging into the system - otherwise it'll be hell to figure out why it doesn't work. Instrument the code. Use the google to find for solutions to problems (compiler warnings etc.)</div><div id="10b3a8f2-380c-4374-9c81-836376eef58e" class="">Keep it simple and work in small chunks.</div><div id="340099e4-ee4e-4076-953a-b77bd51b6ea7" class="">Get into the habit of writing programs from scratch.</div><div id="3c38ff7f-ffff-4f24-92d9-8501021e2098" class="">Don't put things off. When asked to do something, just do it.</div><div id="c3bbbe46-4ab3-4d8b-b9c6-b8e27feecb4d" class="">Read the manual (for tools, for library functions).</div><div id="a9aedd68-c27e-40d4-832f-36ff17932724" class="">Be grateful to people finding bugs in your software (i.e., don't let your hurt ego interfere).</div><div id="6d4aaf3f-a3a9-4d53-be36-0f78f83d1222" class="">Don't program by experimentation.</div><div id="fa150f31-ac63-4794-8f96-8157a00c5574" class="">Automate the workflow (always when you repeat the same keystrokes). You can use Python, Ruby, Perl, Lisp.</div><div id="5ebc0882-bc47-40f1-a3e6-4963ee722250" class="">Use regexps to grep through the source in Emacs. (I would add: use&nbsp;<a href="http://www.sourceinsight.com/">SourceInsight instead</a>, much more powerful (especially for C/C++ code).</div><div id="88086084-c3e1-4e9b-a092-0aab165bbb17" class="">Refactor the code - take the code apart and put it together again. It's scary to refactor - fear that change will break the stuff. Another reason to have automated tests.</div><div id="d6193407-27ae-42f5-85ac-61c8daef770a" class="">Learn the tools - they are productivity gains.</div><div id="eab47b44-82cb-4e9b-bc6e-e5984245e6bf" class="">Use version control. Use bug database (defect tracking).</div><div id="4ac911e7-fec7-4c3a-b625-1330feca8743" class="">Quality analyzer (purify) and code coverage tools. Profilers. Expensive.</div><div id="b4ab84b4-170f-45f1-98fd-f89dbf302824" class="">Learn to estimate. Be pessimistic. Make trade-offs, prioritize.</div><div id="62bdc692-d72a-42ad-a4ee-85950a6424e0" class="">Business people matter. Business stuff matters. Technology is secondary.</div><div id="2c1e2995-8d13-40bb-bf13-0c603f3af6e7" class="">Installation script for your software is important - this is the first thing that a custmore sees. Make it good.</div><div id="312a41a4-a52a-4985-a813-9a647d2990fd" class="">Don't work with primadonnas.</div></div>
+        </div>
+
+        <div class="article-meta">
+            <div>
+
+
+                Written on Aug 29 2001.
+
+
+
+            </div>
+            <div>
+
+
+                <a href="/">home</a>
+
+
+            </div>
+            <div>
+                Found a mistake, have a comment?
+                <a href="#" onclick="showcontact(); return false;">Let me know</a>.
+            </div>
+        </div>
+
+        <form name="blog-article-feedback" id="contact-form" method="post"><input type="hidden" name="form-name" value="blog-article-feedback">
+            <p>
+            </p><div class="contact-light">Feedback about page:</div>
+            <input type="text" name="page-url" id="contact-page-url" readonly="">
+            <p></p>
+            <p>
+            </p><div class="contact-light">Feedback:</div>
+            <textarea name="message" id="msg-for-chris"></textarea>
+            <div class="contact-light">Optional: your email if you want me to get back to you: </div>
+            <input type="email" name="email">
+            <p></p>
+            <p>
+                <button type="submit" class="contact-btn">
+                    Send Feedback
+                </button>
+                <button class="contact-btn" style="float: right;" onclick="hidecontact(); return false;">
+                    Cancel
+                </button>
+            </p>
+            <p>
+            </p><div><script src="https://www.google.com/recaptcha/api.js"></script></div></form></div></div></body></html>

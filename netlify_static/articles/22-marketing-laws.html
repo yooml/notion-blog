@@ -1,0 +1,190 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="always">
+    <link rel="alternate" type="application/atom+xml" title="RSS 2.0" href="/atom.xml">
+    <link rel="canonical" href="https://blog.kowalczyk.info/articles/22-marketing-laws.html">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kjk">
+    <meta name="twitter:title" content="Summary of the book &quot;The 22 Immutable Laws of Marketing&quot;">
+    <meta name="twitter:creator" content="@kjk">
+
+
+    <meta property="og:title" content="Summary of the book &quot;The 22 Immutable Laws of Marketing&quot;">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.kowalczyk.info/articles/22-marketing-laws.html">
+
+    <title>Summary of the book "The 22 Immutable Laws of Marketing"</title>
+
+    <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript">
+        function showcontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "block";
+            el = document.getElementById("contact-page-url");
+            var uri = window.location.href;
+            uri = uri.replace("#", "");
+            el.value = uri;
+            el = document.getElementById("msg-for-chris");
+            el.focus();
+        }
+        function hidecontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "none";
+        }
+        function isWindows() {
+            return window.navigator &&
+                window.navigator.platform &&
+                window.navigator.platform.indexOf('Win') >= 0
+        }
+        function maybeShowAd() {
+            if (!isWindows()) {
+                return;
+            }
+            var el = document.getElementById("ad-software-2");
+            el.style.display = "flex";
+        }
+        function onLoaded() {
+            maybeShowAd();
+        }
+        document.addEventListener("DOMContentLoaded", onLoaded);
+    </script>
+    <script type="text/javascript">
+        var galleries = {};
+        function buildGalleriesInfo() {
+            var els = document.getElementsByTagName("img");
+            var n = els.length;
+            for (var i = 0; i < n; i++) {
+                var el = els[i];
+                var id = el.id;
+                if (!id.startsWith("id-thumb-img-")) {
+                    continue
+                }
+                id = id.replace("id-thumb-img-", "")
+
+                var parts = id.split("-");
+                var galleryID = parseInt(parts[0]);
+                var imageNo = parseInt(parts[1]);
+                var galleryInfo = galleries[galleryID] || {};
+                galleryInfo[imageNo] = el.src;
+                galleries[galleryID] = galleryInfo;
+            }
+            var ids = Object.keys(galleries);
+            for (var gid of ids) {
+                var galleryInfo = galleries[gid];
+                galleryInfo.nImages = Object.keys(galleryInfo).length;
+                galleryInfo.currImageNo = 0;
+                changeShot(gid, 0);
+            }
+        }
+
+        function changeShot(galleryID, imgNo) {
+            var gi = galleries[galleryID];
+            gi.currImageNo = imgNo;
+            var url = gi[imgNo];
+            var id = "id-gallery-" + galleryID;
+            var el = document.getElementById(id);
+            el.src = url;
+
+            for (var i = 0; i < gi.nImages; i++) {
+                id = "id-thumb-" + galleryID + "-" + i;
+                el = document.getElementById(id);
+                if (i == imgNo) {
+                    el.classList.add("selected-img");
+                } else {
+                    el.classList.remove("selected-img");
+                }
+            }
+            var els = document.getElementsByTagName("div");
+            var nEls = els.length;
+        }
+
+        function imgNext(galleryID) {
+            var gi = galleries[galleryID];
+            var nImages = gi.nImages;
+            var imgNo = gi.currImageNo;
+            imgNo = (imgNo + 1) % nImages;
+            changeShot(galleryID, imgNo);
+        }
+        function imgPrev(galleryID) {
+            var gi = galleries[galleryID];
+            var imgNo = gi.currImageNo - 1;
+            if (imgNo < 0) {
+                imgNo = gi.nImages - 1;
+            }
+            changeShot(galleryID, imgNo);
+        }
+        document.addEventListener("DOMContentLoaded", buildGalleriesInfo);
+    </script>
+
+</head>
+
+<body>
+<div id="content">
+    <div id="post">
+        <div class="title">
+            <a href="/">Home</a> /
+            <a href="/article/ec1723d039f34a5ca30568a0deb2ad76/documents">Documents</a> /  Summary of the book "The 22 Immutable Laws of Marketing"
+
+
+            <a class="edit-link" href="https://notion.so/2299e4ce51f2425db192fca7a6ce6242" rel="nofollow" target="_blank">edit</a>
+
+        </div>
+
+        <div id="ad-software-2">
+            <div>
+                Try <a href="https://www.documentalist.io/like-dash-for-windows.html" target="_blank">Documentalist</a>, my app that offers fast, offline access to 190+ programmer API docs.
+            </div>
+        </div>
+
+
+
+        <div>
+            <p></p><div class="notion-page" id="2299e4ce-51f2-425d-b192-fca7a6ce6242"><h2 id="1f988b12-523c-4899-af5f-b6aee1594a97" class="">Introduction</h2><div id="72fde877-02b7-40a6-a03d-43e388384932" class="">This is a summary of ideas from the book&nbsp;<a href="http://www.amazon.com/exec/obidos/ASIN/0887306667/">The 22 Immutable Laws of Marketing</a>&nbsp;by Al Ries and Jack Trout. Normal text is my summary. Text in&nbsp;italic&nbsp;is my commentary. Remember: this is just a short summary and is not meant to replace the book. Nothing beats reading the real thing. The book is short, buy it and read it.</div><h2 id="f3521c27-2404-4ad0-a50f-a458f5b40598" class="">Law 1 (law of leadership)</h2><div id="be4430df-1851-44c8-ada6-2872f7973518" class="">Being first in the market is better than having a better product.</div><div id="57c20abf-6cfe-4e7a-a440-e4baf3bb5bc2" class="">Examples:</div><ul id="a6b4db8c-a1e5-4da6-b43f-42cf1d7f91f7" class="bulleted-list"><li>we all remember who first flew over Atlantic or who was the first man on the moon but almost no-one knows who was the second</li><li>Heineken was the first imported beer in USA and still is No. 1 imported beer</li><li>same for Miller Lite, first domestic light beer</li></ul><div id="f094e4e1-055b-4b56-805b-ebab5250febf" class="">Being first doesn't matter if the idea/product is not good.</div><div id="37af0f1b-a70d-4968-8b61-b134774e9d8c" class="">In other words: being first gives you very big advantage over competition but doesn't guarantee success. It doesn't matter that you're first to market if no-one needs your product or if your product is very bad. Computer industry has counter-examples (first spreadsheet isn't the dominant spreadsheet, first word processor isn't the dominant word processor) so you can overcome first-mover advantage, but it's very hard and requires the leader to make big mistakes.</div><h2 id="a506163c-b2eb-4ae1-b747-3bc3803d51c8" class="">Law 2 (law of category)</h2><div id="93266d53-eb19-449b-96c3-d2f1245f5671" class="">It's hard to gain leadership in a category with a lot of competition.</div><div id="1fe51497-dc57-4c4e-8ab8-1ac617609c97" class="">It's better to create a productin new category.</div><div id="bf9c0d50-75a1-42f0-bc2e-818ffb0978f8" class="">Category doesn't have to be radically different, e.g. if there's dominant player in imported beer you can become the first to import light beer. If you can't be the first to fly over Atlantic, you can still be the first woman to fly over Atlantic.</div><h2 id="6b082536-1210-4978-bd5f-e8cb033c03d9" class="">Law 3 (law of mind)</h2><div id="614bf8d4-88dd-46d2-90cf-ad1211593a3a" class="">It's not important to be first in the market but first in the mind of consumers.</div><div id="8fe426d9-3671-430f-aca5-f1a80d275702" class="">One way to get mind-share is to out-advertise earlier competitor.</div><h2 id="226b5e0e-e895-4f6e-b65a-dc91f4d43748" class="">Law 4 (law of perception)</h2><div id="e46858f3-f55d-4169-862d-e89932fa74bc" class="">Marketing is not about products (their features or quality) but about perceptions (how people perceive products).</div><div id="5bd0c2ae-b0d2-472b-80ce-2a4856741d98" class="">Reality doesn't exists. What we call "reality" is just a perception of reality that we create in our minds.</div><div id="92e3e07d-4420-4f74-92bd-af43bca27054" class="">Honda is a leading Japanese car manufacturer in US but only third in Japan (after Toyota and Nissan). If the quality of the car was the most important thing it should have the same position in all markets.</div><div id="d000e092-c94b-42ab-95b4-5e220eedf48e" class="">In Japan people perceive Honda as a manufacturer of motorcycles.</div><div id="07d5a5a1-726d-4429-a885-b7103340c030" class="">Marketing should be focused on changing the perception.</div><div id="17fe8f40-bb28-4099-9bee-7ec48b4c2754" class="">I have mixed feelings about this. You can't separate perception from reality too much. You can market Honda Civic as luxury car. BMW is marketed as luxury car but it's also superior to Honda Civic.</div><h2 id="f53bd2aa-3bd5-4b8b-9ca2-5620e46bcfdb" class="">Law 5 (law of focus)</h2><div id="08010643-154c-49ad-a9cf-2cf5ccb4e2f4" class="">The most powerful concept in marketing is owning a word in the prospect's mind.</div><div id="7b9c5e8f-2233-4526-b816-f899859fed7f" class="">Owning in this context means that if people hear or see this word they usually connect it with a company that "owns" this word. IBM owns "computer". FedEx owns "overnight".</div><div id="e38f0c45-9be9-48a8-8b26-762ab0341f1d" class="">You can't take somebody else's word</div><div id="af2bb95e-32ca-4124-916e-f74157b3ed4f" class="">This only applies to biggest companies, not small or medium-sized businesses.</div><h2 id="582416ba-a293-4561-b2e6-13ff4f585062" class="">Law 6 (law of exclusivity)</h2><div id="9b9d8a73-af3a-4c6f-8db2-9c61c201c830" class="">It's fruitless to try to take over a word that is already owned by a competitor.</div><div id="220f0208-db8b-47d0-9a49-1134cce19408" class="">Burger King tried to own word "fast" which was already owned by McDonald. They failed miserably.</div><div id="fd17ffaf-38e2-4dcb-b903-65663fae3974" class="">FedEx tried to take over "worldwide" from DHL.</div><h2 id="cd783c17-4d70-4375-8d64-ed1be373314c" class="">Law 7 (law of the ladder)</h2><div id="86a6e651-8de7-4f12-a368-ed8698253c07" class="">Marketing strategy depends on your position in the market.</div><div id="9a27d884-ff13-455f-ae89-034a764c8d26" class="">No. 2 company uses different strategy than No. 1 or 3.</div><div id="e5739e7a-5c4b-47ff-9f1c-f45fc02c8a78" class="">Avis was No. 2 in car rental and when they advertised as "finest in rent-a-cars" they had losses because their marketing wasn't credible (you can't be "finest" being No. 2).</div><div id="9a61db2b-daaa-4842-a590-d1d1d6664040" class="">They turned profit when they switched to "Avis is only No. 2 in rent-a-cars. So why go with us? We try harder".</div><div id="91cddde6-19b6-40b0-9c4d-8b4290113c4c" class="">Then they had another disastrous marketing campaign when they started claiming "Avis is going to be No. 1".</div><div id="e73bb72b-846d-462b-81b2-57b5e38722aa" class="">I agree with the premise (kind of marketing depends on your position in the market). However the book says very little about what kind of strategy one should use in a given position (except for a few examples).</div><h2 id="656b099d-b808-46fb-9219-2c53c6a878c7" class="">Law 8 (law of duality)</h2><div id="71e7851f-682a-4b5c-848e-6ce26ef5259a" class="">In the long run, every market becomes a two-horse race. McDonald &amp; Burger King. Coca-Cola &amp; Pepsi. Nike &amp; Reebok. Crest &amp; Colgate.</div><div id="f2cd720c-85cb-41bd-948d-57c42d64582b" class="">There are many counter-examples to this (movie studios, car companies). Also, how knowing this helps marketing person? There's little a marketer can do about the position of his company in the market. The only conclusion I can make is that if I were a marketing person and worked for No. 3 company, I should quit and apply for a job in No. 2 or 1.</div><h2 id="24bcceb0-822d-4e83-a61b-c053749ffa75" class="">Law 9 (law of opposite)</h2><div id="a51479c8-eeaf-4176-ada0-04bd733ff150" class="">If you're shooting for second place, your strategy is determined by the leader.</div><div id="a5d05ecd-d744-45fc-8b39-0d4ef65c68f9" class="">Leverage the leader's strength into a weakness.</div><div id="1e3c9bdd-b19d-4b69-8e26-107d37baa526" class="">Don't try to be better than the leader, try to be different.</div><div id="ad21e89e-77a9-44b9-a74e-d99e3d225738" class="">E.g. Pepsi marketed itself as a "choice for the new generation" when faced with Coca-cola's "old and established" brand.</div><div id="db372c56-a6f2-4ba3-a9f6-c59402ff7688" class="">Sounds correct although doesn't apply to those who do have ambitions to overtake the leader (e.g. Excel killed Lotus 1-2-3 by being a better spreadsheet, not a different spreadsheet).</div><h2 id="703eee76-3137-4256-a8ba-6eb44fb30184" class="">Law 10 (law of division)</h2><div id="6e5dcdf5-8ce6-42b2-8e30-efd9819aec75" class="">Over time a category will split into two or more categories.</div><div id="e3dddd51-9fc5-4a06-86af-31de003e5813" class="">E.g. computers started as a single category but broke up into mainframes, workstations, personal computers, laptops etc.</div><div id="657a283a-8e09-4339-afb2-8e08813b7806" class="">Cars started as a single category but divided into luxury cars, sport cars, RVs, minivans etc.</div><div id="06d2ee22-09ba-430f-bd09-90417e4cdef3" class="">Companies often don't understand that and instead think that categories are combining, believe in synergy.</div><div id="a0da4a1b-4075-4b70-9c72-145bdff256cc" class="">Leader can maintain dominance by addressing emerging categories with new brand names instead of using brand name successful in one category in a new category.</div><div id="3b70221a-06d1-4ac3-a25e-669e846fc679" class="">E.g. when Honda wanted to go up-market it created a new brand, Acura.</div><h2 id="df28bb93-0195-499d-b2f4-7bf811b850cf" class="">Law 11 (law of perspective)</h2><div id="16d78389-24ff-4e5c-9764-45611d1f75b9" class="">Marketing effects take place over an extended period of time. It's a mistake to sacrifice long-term planning with actions that improve short-term balance sheet.</div><div id="b507d84f-70e5-49cc-9899-0de212a375f6" class="">E.g. a sale increases short-term profits but in the long-term educates people not to buy for regular price, therefore decreasing long-term profits.</div><h2 id="ba066be5-dc98-4ef5-87fa-38662a1facd1" class="">Law 12 (law of extension)</h2><div id="69187653-638a-4e11-bddb-52aa601364b7" class="">There's an irresistible pressure to extend the equity of the brand and it's a mistake.</div><div id="4e09e324-9f0f-4dec-a625-b0b32b2e8b21" class="">Instead one should create new brands to address new markets/products.</div><div id="6269ceba-9576-452c-b60f-6ea0db355f9e" class="">Here authors predict (in 1993) that Microsoft will fail because they use this unhealthy strategy of extending their brand to new products. 14 years later and Microsoft is still going strong.</div><h2 id="99d2cf7e-8054-4759-8f4e-f81ffd161cdf" class="">Law 13 (law of sacrifice)</h2><div id="817c4e9f-ed19-4cd7-bd43-6b06e36fb917" class="">You have to give up something in order to get something. There are three things to sacrifice:</div><ul id="6a45219d-d7eb-4197-aab0-86f23f7c4775" class="bulleted-list"><li>product line</li><li>target market</li><li>constant change</li></ul><h2 id="30f8f262-915e-40e5-8c7c-f38777db398f" class="">Law 14 (law of attributes)</h2><div id="41108884-f6cd-4bff-aa82-c43bdfcb43f4" class="">For every attribute, there is an opposite, effective attribute.</div><div id="b9b04b95-4e53-446a-b22f-32d14943738f" class="">You can't own the same word as the competition. You have to find another word to own, another attribute.</div><h2 id="53fb0db8-c911-433b-8e5e-33777d25e5e5" class="">Law 15 (law of candor)</h2><div id="db3509a4-e150-4cde-8b05-d23d9f3c012d" class="">When you admit a negative, the prospect will give you a positive. Candor is disarming. It's ok to admit, as Avis did, that "Avis is only No. 2 in rent-a-cars".</div><h2 id="27bdbe7e-8e90-4526-b26f-62facd420b7e" class="">Law 16 (law of singularity)</h2><div id="4bc9480a-ac31-4205-bb21-bbd5a0880b68" class="">In each situation, only one move will produce substantial results.</div><div id="3a22c962-9d90-4e11-b429-427e69a798da" class="">People tend to think that success is the result of a lot of small efforts well executed, that working harder is a way to success.</div><div id="e3868153-2bf3-41d7-9b0c-e94a9965c4c1" class="">In marketing the only thing that works is a single, bold stroke.</div><h2 id="b71ee91e-8a69-48a8-bcbc-450d55235a05" class="">Law 17 (law of predictability)</h2><div id="4bdd74eb-ea7d-4101-86af-a747db421744" class="">Unless you write your competitors' plans, you can't predict the future.</div><div id="444b1f30-2015-43d3-8b74-dc8d30ff2a07" class="">You don't know the future, you don't know what your competition will do so you have to build your company and marketing strategies to be flexible, to be able to quickly respond to changing situation.</div><h2 id="dc6dfc17-c2e2-429e-9c17-e4f4182498fd" class="">Law 18 (law of success)</h2><div id="69e0061d-d019-498d-8fe3-81ddc12e42b7" class="">Success often leads to arrogance, and arrogance to failure.</div><div id="34ca4f75-7a56-4a9f-97ef-0610a59a454e" class="">Don't be arrogant, drop the ego, be objective.</div><h2 id="1192f253-f997-4664-99f9-f1e4a5c85138" class="">Law 19 (law of failure)</h2><div id="9aa8dbb5-6401-4062-9abe-dc86dd5769ce" class="">Failure is to be expected and accepted.</div><div id="cd38c80d-9230-423b-ac82-05dfbff78e10" class="">Drop things that don't work instead of trying to fix them.</div><div id="586cd412-da35-4fbe-acca-294cb5bd77a4" class="">Don't punish for failures. If you do, people will stop taking risks.</div><h2 id="2df4bca0-1f84-41d8-ac7c-3d9f1ed987f0" class="">Law 20 (law of hype)</h2><div id="f1971a8b-43e1-4779-863c-e44056d13753" class="">The situation is often the opposite of the way it appears in the press.</div><div id="3f58d6c6-e15b-4d9d-bcb7-b1487506f54e" class="">The amount of hype isn't proportional to success. Often failed products are heavily hyped.</div><h2 id="230762c9-6dfa-48ff-a494-e93b592728ee" class="">Law 21 (law of acceleration)</h2><div id="eab5e827-07ee-4f48-bdb5-ae9f03879070" class="">Successful programs are not built on fads but on trends.</div><h2 id="164b926b-d711-472c-8eb8-9ddf9e10f820" class="">Law 22 (law of resources)</h2><div id="f6d5f8dd-1b8b-4118-9362-4b4680c5c3fd" class="">Without adequate funding an idea won't get off the ground. You need a lot of money to market your ideas.</div><div id="dd26b814-ae5a-4227-a3e5-c729a437ed73" class="">On one hand you can read it as a "don't fool yourself" advice. On the other hand authors promote indiscriminate spending of money on advertising without mentioning that sometimes advertisement doesn't pay. It seems obvious that you should never spend more on marketing that you can hope to get out of it from increased revenues, yet the books never says that. It just asserts that you need to spend a lot on marketing. A suspicious advice coming from people who sell marketing.</div><h2 id="e615dab8-a86d-4fa0-8063-0a7c51e7e1e8" class="">Summary</h2><div id="8f0b6cf1-f3cf-427f-a894-540fe283a428" class="">How one should judge a book on marketing? If the book gives information that allows you to do better marketing, then it's a good marketing book.</div><div id="1aa40245-2684-47cc-a0f6-57d21a48a3f8" class="">In my opinion "The 22 Immutable Laws Of Marketing" fails in that respect. Their examples that illustrate the laws are taken from the relatively small pool of the biggest companies in the world. It's not evident that the same rules apply to small (or medium) businesses.</div><div id="f4402727-8c8e-41f2-8501-c46b3ead5405" class="">The advice is frequently not helpful, e.g. "make sure your program deals realistically with your position on the ladder". Well, thanks guys, but how exactly?</div><div id="2db85abe-e9a0-43d6-b849-b8202771f3ad" class="">A very frequent flaw of this book is its use of selective examples to illustrate their laws.</div><div id="5f04021b-005c-45b6-85d1-f0799be9e290" class="">If I can choose my examples I can make any laws I want - there will always be an example that support my "law". The problem is that there might be 100 counter-examples that I won't mention.</div><div id="80cd0084-ae4b-4eb9-a441-b661735f1cbd" class="">I can understand that providing counter-examples isn't something that authors were interested in, that a rule that is only correct in 80% of the cases is still a very useful rule, that not talking about every possibility can improve the clarity of exposition ("A little inaccuracy can save tons of explanation") but I got the impression that author's way of choosing examples was based on "whatever seems to confirm what we say" principle.</div><div id="4a448755-8d19-4ec6-a858-2d8ee646270e" class="">And never forget:</div><blockquote id="5de47ad1-de00-460f-91a1-050401420174" class="">Marketing is the science of convincing us that What You Get Is What You Want.&nbsp;-- John Carter</blockquote></div>
+        </div>
+
+        <div class="article-meta">
+            <div>
+
+
+                Written on Jun 1 2002.
+
+
+
+            </div>
+            <div>
+
+
+                <a href="/">home</a>
+
+
+            </div>
+            <div>
+                Found a mistake, have a comment?
+                <a href="#" onclick="showcontact(); return false;">Let me know</a>.
+            </div>
+        </div>
+
+        <form name="blog-article-feedback" id="contact-form" method="post"><input type="hidden" name="form-name" value="blog-article-feedback">
+            <p>
+            </p><div class="contact-light">Feedback about page:</div>
+            <input type="text" name="page-url" id="contact-page-url" readonly="">
+            <p></p>
+            <p>
+            </p><div class="contact-light">Feedback:</div>
+            <textarea name="message" id="msg-for-chris"></textarea>
+            <div class="contact-light">Optional: your email if you want me to get back to you: </div>
+            <input type="email" name="email">
+            <p></p>
+            <p>
+                <button type="submit" class="contact-btn">
+                    Send Feedback
+                </button>
+                <button class="contact-btn" style="float: right;" onclick="hidecontact(); return false;">
+                    Cancel
+                </button>
+            </p>
+            <p>
+            </p><div><script src="https://www.google.com/recaptcha/api.js"></script></div></form></div></div></body></html>

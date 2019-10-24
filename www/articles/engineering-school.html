@@ -1,0 +1,256 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="always">
+    <link rel="alternate" type="application/atom+xml" title="RSS 2.0" href="/atom.xml">
+    <link rel="canonical" href="https://blog.kowalczyk.info/articles/engineering-school.html">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@kjk">
+    <meta name="twitter:title" content="Engineering school (summary of Rick Catell talk)">
+    <meta name="twitter:creator" content="@kjk">
+
+
+    <meta property="og:title" content="Engineering school (summary of Rick Catell talk)">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://blog.kowalczyk.info/articles/engineering-school.html">
+
+    <title>Engineering school (summary of Rick Catell talk)</title>
+
+    <link href="/css/main.css" rel="stylesheet">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript">
+        function showcontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "block";
+            el = document.getElementById("contact-page-url");
+            var uri = window.location.href;
+            uri = uri.replace("#", "");
+            el.value = uri;
+            el = document.getElementById("msg-for-chris");
+            el.focus();
+        }
+        function hidecontact() {
+            var el = document.getElementById("contact-form");
+            el.style.display = "none";
+        }
+        function isWindows() {
+            return window.navigator &&
+                window.navigator.platform &&
+                window.navigator.platform.indexOf('Win') >= 0
+        }
+        function maybeShowAd() {
+            if (!isWindows()) {
+                return;
+            }
+            var el = document.getElementById("ad-software-2");
+            el.style.display = "flex";
+        }
+        function onLoaded() {
+            maybeShowAd();
+        }
+        document.addEventListener("DOMContentLoaded", onLoaded);
+    </script>
+    <script type="text/javascript">
+        var galleries = {};
+        function buildGalleriesInfo() {
+            var els = document.getElementsByTagName("img");
+            var n = els.length;
+            for (var i = 0; i < n; i++) {
+                var el = els[i];
+                var id = el.id;
+                if (!id.startsWith("id-thumb-img-")) {
+                    continue
+                }
+                id = id.replace("id-thumb-img-", "")
+
+                var parts = id.split("-");
+                var galleryID = parseInt(parts[0]);
+                var imageNo = parseInt(parts[1]);
+                var galleryInfo = galleries[galleryID] || {};
+                galleryInfo[imageNo] = el.src;
+                galleries[galleryID] = galleryInfo;
+            }
+            var ids = Object.keys(galleries);
+            for (var gid of ids) {
+                var galleryInfo = galleries[gid];
+                galleryInfo.nImages = Object.keys(galleryInfo).length;
+                galleryInfo.currImageNo = 0;
+                changeShot(gid, 0);
+            }
+        }
+
+        function changeShot(galleryID, imgNo) {
+            var gi = galleries[galleryID];
+            gi.currImageNo = imgNo;
+            var url = gi[imgNo];
+            var id = "id-gallery-" + galleryID;
+            var el = document.getElementById(id);
+            el.src = url;
+
+            for (var i = 0; i < gi.nImages; i++) {
+                id = "id-thumb-" + galleryID + "-" + i;
+                el = document.getElementById(id);
+                if (i == imgNo) {
+                    el.classList.add("selected-img");
+                } else {
+                    el.classList.remove("selected-img");
+                }
+            }
+            var els = document.getElementsByTagName("div");
+            var nEls = els.length;
+        }
+
+        function imgNext(galleryID) {
+            var gi = galleries[galleryID];
+            var nImages = gi.nImages;
+            var imgNo = gi.currImageNo;
+            imgNo = (imgNo + 1) % nImages;
+            changeShot(galleryID, imgNo);
+        }
+        function imgPrev(galleryID) {
+            var gi = galleries[galleryID];
+            var imgNo = gi.currImageNo - 1;
+            if (imgNo < 0) {
+                imgNo = gi.nImages - 1;
+            }
+            changeShot(galleryID, imgNo);
+        }
+        document.addEventListener("DOMContentLoaded", buildGalleriesInfo);
+    </script>
+
+</head>
+
+<body>
+<div id="content">
+    <div id="post">
+        <div class="title">
+            <a href="/">Home</a> /
+            <a href="/article/ec1723d039f34a5ca30568a0deb2ad76/documents">Documents</a> /  Engineering school (summary of Rick Catell talk)
+
+
+            <a class="edit-link" href="https://notion.so/af7e8c6def254e2ab34d9d39eee725bf" rel="nofollow" target="_blank">edit</a>
+
+        </div>
+
+        <div id="ad-software-2">
+            <div>
+                Try <a href="https://www.documentalist.io/like-dash-for-windows.html" target="_blank">Documentalist</a>, my app that offers fast, offline access to 190+ programmer API docs.
+            </div>
+        </div>
+
+
+
+        <div>
+            <p></p><div class="notion-page" id="af7e8c6d-ef25-4e2a-b34d-9d39eee725bf"><h2 id="114c8e94-0259-4a71-b5da-2191cdd34852" class="">Introduction</h2><div id="b9e168c8-c00a-4fc3-bd3c-d9d29785566c" class="">This is a summary of&nbsp;Rick Catell's talk.</div><div id="1386bc2d-7569-46cd-85bd-10691c0702ea" class="">Rick is a Distinguished Engineer at Sun with years of experience. In this talk he shares his experience. My comments are&nbsp;in italic.</div><h2 id="38b07cfb-a523-43c7-9fdc-b3ee3245fef8" class="">What does Rick wish he learned in Engineering School</h2><div id="0f9a3ae9-18f6-421b-be43-819bb9a7476b" class="">Focus. Don't try to do everything yourself. Example: Xerox PARC tried to build everything from ground up: hardware, OS, software. Same with SGI.</div><div id="9f3c07e3-4b69-4e5b-938b-40c65386357d" class="">1% of leaders are responsible for most success. Good leaders need to have:</div><ul id="65cd3a60-e417-4b34-8efb-1763c3610946" class="bulleted-list"><li>market vision</li><li>technical vision</li><li>drive, so that they can get things done</li><li>leadership</li></ul><div id="4e56e3cb-da47-4117-a371-54f700989052" class="">A simple math tells us that a number of people that have all those skills developed above average is very small. Lesson: pick your leaders wisely.</div><div id="826ee231-0d86-4c4f-b1a1-43177234ff36" class="">Suboptimal decision is better than no decision.</div><div id="c1b942e5-b561-4252-acc1-807d1c04de95" class="">Trust in an organization is inversely proportional to distance. That e.g. explains why everyone went to develop their own versions of Unix (Irix, AIX, Solaris, HP-UX etc.) even though it was in their best interest to cooperate - the couldn't get to trust each other that co-operatively developed version would fill their needs.</div><div id="07fb5482-e8c5-4178-a1d9-a119a7354294" class="">Engineers follow the leader. An example of a project where everyone was moved except the leader - soon all the engineers resigned from the project.</div><div id="0b9dcc28-0320-4e7d-957b-d4349679166f" class="">Organizations are self-preserving.&nbsp;The book&nbsp;<a href="http://www.amazon.com/exec/obidos/ASIN/0743225716/">"Survival is not enough"</a>&nbsp;talks more about this. Successfull organizations resist change because they have a winning strategy. The danger is that they are likely to miss the next winning strategy.</div><div id="9463fe3d-5382-4b63-b81a-3b13bdb85ede" class="">You needs more pigs than chickens (committed people vs. just participants). The analogy comes from ham &amp; eggs breakfast: pig is committed, chicken just participates.</div><div id="35b2151b-4c9a-4869-8fc1-3b8a23a2e5bf" class="">Most research and startups won't succeed.</div><div id="c7eabad8-3718-45de-8576-1f621f2be858" class="">Innovation will happen elsewhere - no matter how big you are, you can't hire all the smart people in the industry.</div><div id="ff283002-d125-4205-8758-bdacea0b927a" class="">You have to sell your ideas.</div><div id="e0780a5b-f913-4731-8ce6-e33562dab585" class="">Don't base a risky project on another risky one.</div><div id="684d005f-66d2-4ed8-9cf7-077453ae456b" class="">Know your customer, eat your own dogfood.</div><div id="5f74ffed-33d3-44b3-8444-3fb5283443f1" class="">Being first is more important than being best (from the book&nbsp;<a href="http://www.amazon.com/exec/obidos/ASIN/0887306667">"The 22 immutable laws of marketing".</a>)&nbsp;Some people think different.&nbsp;<a href="http://www.cooper.com/">Allan Cooper</a>&nbsp;and&nbsp;<a href="http://www.useit.com/">Jakob Nielsen</a>&nbsp;say that it's more important to have a good product later than bad product right now and debunk the "first mover" advantage. Maybe it's about finding the proper balance?</div><div id="2659c16e-eefb-45cf-99df-df5ed2adb17b" class="">Catch the wave of new markets and technology. If you catch the wave you might end up very well off even if you make tons of mistake (Internet Bubble, anyone?). But a new wave doesn't happen often.</div><div id="4f130695-bae3-4be6-8926-431329dd106f" class="">Physics overcome fine print. Natural tendencies will take over the relationship regardless of the arrangements you might make.</div><div id="0b052a64-4af4-40ef-aca6-aa5d47cafe9a" class="">Beware success-blindness - don't just stay fat &amp; happy.&nbsp;Mainframe makers missed the micro-compter revolution.</div><div id="b99a5b48-4da9-4c78-a6ac-ee6cb3fa96d4" class="">Focus on the achievable, not impossible or inevitable.</div><div id="8cc1e8d2-42b4-4eb5-9477-53b91c73528e" class="">Carrier advice: prioritize tasks every day, week year. Also:</div><ul id="35ba9488-1bff-4c9b-b6e7-fd8b0422e0b5" class="bulleted-list"><li>focus on relevant</li><li>figure out what not to do (time is the most precious commodity)</li></ul><div id="ea904a1b-b428-4791-9993-16827314af53" class="">Figure out what you want and how to get there. Make plans but allow them to change.</div><div id="ccffe3cc-015f-4251-9976-d4f82cc1ba2c" class="">Don't get too good at things you don't like to do. From the book "Your money or your life": most people said that they wouldn't be doing what they do if they didn't have to worry about money.</div><div id="0795692b-ef90-44c5-9814-10a7e048ebdc" class="">Figure out ways to be more productive. If you do something often - take time to figure out ways to do it faster e.g. learn touch-typing if you have to type a lot.</div><div id="33163bb6-d89b-4bdd-baac-093ea72ce1bd" class="">Learn writing, speaking, negotiation and business skills.</div><div id="44cca85d-7ad8-4bb2-887f-63932ad776c0" class="">Do the right thing, not the corporate thing.</div><div id="85ebedb9-5e27-4465-bddd-51d510e40b95" class="">Books he recommends:</div><ul id="7eaf856e-84cc-4abd-8b3a-6328b1a80a46" class="bulleted-list"><li><a href="http://www.amazon.com/exec/obidos/ASIN/0684863456/">"Competing on Internet time: Lessons from Netscape and its battle with Microsoft"</a>&nbsp;- a book about Netscape.</li><li><a href="http://www.amazon.com/exec/obidos/ASIN/0684855313/">"Microsoft secrets"</a>&nbsp;- a book on Microsoft.</li><li><a href="http://www.amazon.com/exec/obidos/ASIN/0887306667">"The 22 immutable laws of marketing"</a>&nbsp;- a book on marketing</li><li><a href="http://www.amazon.com/exec/obidos/ASIN/0887309895/">"Dealers of lightning"</a>&nbsp;- a book about famous Xerox PARC research center that is credited with inventing a lot of things that made other companies rich (personal computers, GUI interface, mouse).</li><li><a href="http://www.amazon.com/exec/obidos/ASIN/087584863X/">"Information rules"</a></li><li><a href="http://www.amazon.com/exec/obidos/ASIN/0761512721/">"The Silicon Valley way"</a></li></ul></div>
+        </div>
+
+        <div class="article-meta">
+            <div>
+
+
+                Written on Feb 11 2002.
+
+
+
+            </div>
+            <div>
+
+
+                <a href="/">home</a>
+
+
+            </div>
+            <div>
+                Found a mistake, have a comment?
+                <a href="#" onclick="showcontact(); return false;">Let me know</a>.
+            </div>
+        </div>
+
+        <form name="blog-article-feedback" id="contact-form" method="post"><input type="hidden" name="form-name" value="blog-article-feedback">
+            <p>
+            </p><div class="contact-light">Feedback about page:</div>
+            <input type="text" name="page-url" id="contact-page-url" readonly="">
+            <p></p>
+            <p>
+            </p><div class="contact-light">Feedback:</div>
+            <textarea name="message" id="msg-for-chris"></textarea>
+            <div class="contact-light">Optional: your email if you want me to get back to you: </div>
+            <input type="email" name="email">
+            <p></p>
+            <p>
+                <button type="submit" class="contact-btn">
+                    Send Feedback
+                </button>
+                <button class="contact-btn" style="float: right;" onclick="hidecontact(); return false;">
+                    Cancel
+                </button>
+            </p>
+            <p>
+            </p><div><script src="https://www.google.com/recaptcha/api.js"></script>
+                <div class="g-recaptcha" data-sitekey="6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9"></div>
+                <noscript>
+                    <div>
+                        <div style="width: 302px; height: 422px; position: relative;">
+                            <div style="width: 302px; height: 422px; position: absolute;">
+                                <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+                                        style="width: 302px; height:422px; border-style: none;">
+                                </iframe>
+                            </div>
+                        </div>
+                        <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+              style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+                        </div>
+                    </div>
+                </noscript>
+            </div>
+            <p></p>
+        </form>
+
+        <p></p>
+        <center>
+            <p style="display:flex;justify-content:center">Share on&nbsp;&nbsp;
+                <a href="https://twitter.com/intent/tweet?text=Engineering+school+%28summary+of+Rick+Catell+talk%29&amp;url=https%3A%2F%2Fblog.kowalczyk.info%2Farticles%2Fengineering-school.html&amp;via=kjk" target="_blank">
+                    <svg style="width:24px;height:24px;margin-top:-1px" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path>
+                    </svg>
+                </a>&nbsp;&nbsp;
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.kowalczyk.info%2Farticles%2Fengineering-school.html" target="_blank">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z"></path>
+                    </svg>
+                </a>&nbsp;&nbsp;
+                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fblog.kowalczyk.info%2Farticles%2Fengineering-school.html" target="_blank">
+                    <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path fill="#000000" d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"></path>
+                    </svg>
+                </a>
+            </p>
+        </center>
+        <p></p>
+    </div>
+
+</div><st-div id="__selection-translator__"> <st-div class="__st-box__" style="display: none; position: fixed; z-index: 99999; left: 0px; top: 0px; transform: translateX(234px) translateY(258px);"> <st-header> <st-span class="st-icon-pin" title="固定"></st-span> <st-span class="st-icon-down-open" title="展开"></st-span> <st-span class="st-icon-cog" title="设置"></st-span> </st-header> <st-div class="__query-form__" style="display: none;"> <st-div> <textarea placeholder="输入要翻译的句子或单词"></textarea> </st-div> <st-div> <select> <option value="">自动判断</option> <option value="zh">中文</option><option value="zh-CN">中文(简体)</option><option value="zh-HK">中文(香港)</option><option value="zh-TW">中文(繁体)</option><option value="en">英语</option><option value="ja">日语</option><option value="ko">朝鲜语</option><option value="de">德语</option><option value="fr">法语</option><option value="ru">俄语</option><option value="th">泰语</option><option value="af">南非语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="be">比利时语</option><option value="bg">保加利亚语</option><option value="ca">加泰隆语</option><option value="cs">捷克语</option><option value="cy">威尔士语</option><option value="da">丹麦语</option><option value="dv">第维埃语</option><option value="el">希腊语</option><option value="eo">世界语</option><option value="es">西班牙语</option><option value="et">爱沙尼亚语</option><option value="eu">巴士克语</option><option value="fa">法斯语</option><option value="fi">芬兰语</option><option value="fo">法罗语</option><option value="gl">加里西亚语</option><option value="gu">古吉拉特语</option><option value="he">希伯来语</option><option value="hi">印地语</option><option value="hr">克罗地亚语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="id">印度尼西亚语</option><option value="is">冰岛语</option><option value="it">意大利语</option><option value="ka">格鲁吉亚语</option><option value="kk">哈萨克语</option><option value="kn">卡纳拉语</option><option value="kok">孔卡尼语</option><option value="ky">吉尔吉斯语</option><option value="lt">立陶宛语</option><option value="lv">拉脱维亚语</option><option value="mi">毛利语</option><option value="mk">马其顿语</option><option value="mn">蒙古语</option><option value="mr">马拉地语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="nb">挪威语(伯克梅尔)</option><option value="nl">荷兰语</option><option value="ns">北梭托语</option><option value="pa">旁遮普语</option><option value="pl">波兰语</option><option value="pt">葡萄牙语</option><option value="qu">克丘亚语</option><option value="ro">罗马尼亚语</option><option value="sa">梵文</option><option value="se">北萨摩斯语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sq">阿尔巴尼亚语</option><option value="sv">瑞典语</option><option value="sw">斯瓦希里语</option><option value="syr">叙利亚语</option><option value="ta">泰米尔语</option><option value="te">泰卢固语</option><option value="tl">塔加路语</option><option value="tn">茨瓦纳语</option><option value="tr">土耳其语</option><option value="ts">宗加语</option><option value="tt">鞑靼语</option><option value="uk">乌克兰语</option><option value="ur">乌都语</option><option value="uz">乌兹别克语</option><option value="vi">越南语</option><option value="xh">班图语</option><option value="zu">祖鲁语</option> </select> <st-div class="__exchange__"> <st-span class="st-icon-exchange"></st-span> </st-div> <select> <option value="">自动选择</option> <option value="zh">中文</option><option value="zh-CN">中文(简体)</option><option value="zh-HK">中文(香港)</option><option value="zh-TW">中文(繁体)</option><option value="en">英语</option><option value="ja">日语</option><option value="ko">朝鲜语</option><option value="de">德语</option><option value="fr">法语</option><option value="ru">俄语</option><option value="th">泰语</option><option value="af">南非语</option><option value="ar">阿拉伯语</option><option value="az">阿塞拜疆语</option><option value="be">比利时语</option><option value="bg">保加利亚语</option><option value="ca">加泰隆语</option><option value="cs">捷克语</option><option value="cy">威尔士语</option><option value="da">丹麦语</option><option value="dv">第维埃语</option><option value="el">希腊语</option><option value="eo">世界语</option><option value="es">西班牙语</option><option value="et">爱沙尼亚语</option><option value="eu">巴士克语</option><option value="fa">法斯语</option><option value="fi">芬兰语</option><option value="fo">法罗语</option><option value="gl">加里西亚语</option><option value="gu">古吉拉特语</option><option value="he">希伯来语</option><option value="hi">印地语</option><option value="hr">克罗地亚语</option><option value="hu">匈牙利语</option><option value="hy">亚美尼亚语</option><option value="id">印度尼西亚语</option><option value="is">冰岛语</option><option value="it">意大利语</option><option value="ka">格鲁吉亚语</option><option value="kk">哈萨克语</option><option value="kn">卡纳拉语</option><option value="kok">孔卡尼语</option><option value="ky">吉尔吉斯语</option><option value="lt">立陶宛语</option><option value="lv">拉脱维亚语</option><option value="mi">毛利语</option><option value="mk">马其顿语</option><option value="mn">蒙古语</option><option value="mr">马拉地语</option><option value="ms">马来语</option><option value="mt">马耳他语</option><option value="nb">挪威语(伯克梅尔)</option><option value="nl">荷兰语</option><option value="ns">北梭托语</option><option value="pa">旁遮普语</option><option value="pl">波兰语</option><option value="pt">葡萄牙语</option><option value="qu">克丘亚语</option><option value="ro">罗马尼亚语</option><option value="sa">梵文</option><option value="se">北萨摩斯语</option><option value="sk">斯洛伐克语</option><option value="sl">斯洛文尼亚语</option><option value="sq">阿尔巴尼亚语</option><option value="sv">瑞典语</option><option value="sw">斯瓦希里语</option><option value="syr">叙利亚语</option><option value="ta">泰米尔语</option><option value="te">泰卢固语</option><option value="tl">塔加路语</option><option value="tn">茨瓦纳语</option><option value="tr">土耳其语</option><option value="ts">宗加语</option><option value="tt">鞑靼语</option><option value="uk">乌克兰语</option><option value="ur">乌都语</option><option value="uz">乌兹别克语</option><option value="vi">越南语</option><option value="xh">班图语</option><option value="zu">祖鲁语</option> </select> </st-div> <st-div> <select> <option value="YouDao">有道翻译</option> <option value="BaiDu">百度翻译</option> <option value="Google">谷歌翻译</option> <option value="GoogleCN">谷歌翻译（国内）</option> </select> <st-div class="__action-list__"> <st-div class="__button__ __btn-translate__">翻译 <st-span class="st-icon-down-dir"></st-span> </st-div> <st-div class="__expand__"> <st-div class="__button__">朗读</st-div> <st-div class="__button__">复制</st-div> </st-div> </st-div> </st-div> </st-div> <st-div class="__translate-result__" style="display: none;">正在查询，请稍候……</st-div> <st-div class="__translate-result__" style=""> <st-div style="display: none;"> <st-span></st-span> <st-span class="__retry__">重试</st-span> </st-div> <st-div> <st-div class="__phonetic__"> <st-span style="display: none;"></st-span> <st-span class="__copy-and-read__"> <st-span>朗读</st-span> <st-span style="display: none;">复制</st-span> </st-span> </st-div> <st-div style="display: none;"> <st-ul>  </st-ul> <st-div class="__copy-and-read__"> <st-span class="__copy-and-read__">复制</st-span> </st-div> </st-div> <st-div style=""> <st-div>弄清楚你想要什么，怎么去那里。制定计划但允许他们改变。</st-div><st-div>不要太擅长你不喜欢做的事。从《你的钱还是你的生活》一书中可以看出：大多数人都说，如果不用担心钱的话，他们不会做他们该做的事。</st-div><st-div>想办法提高效率。如果你经常做一些事情-花点时间找出更快的方法，例如，如果你必须大量打字，就学习触摸打字。</st-div><st-div>学习写作、演讲、谈判和商务技巧。</st-div><st-div>做正确的事，而不是公司的事。</st-div> <st-div class="__copy-and-read__"> <st-span class="__copy-and-read__">朗读</st-span> <st-span class="__copy-and-read__">复制</st-span> </st-div> </st-div> </st-div> </st-div> <st-footer> <st-span style="">via <a target="_blank" href="https://fanyi.baidu.com/#en/zh/Figure%20out%20what%20you%20want%20and%20how%20to%20get%20there.%20Make%20plans%20but%20allow%20them%20to%20change.%0ADon't%20get%20too%20good%20at%20things%20you%20don't%20like%20to%20do.%20From%20the%20book%20%22Your%20money%20or%20your%20life%22%3A%20most%20people%20said%20that%20they%20wouldn't%20be%20doing%20what%20they%20do%20if%20they%20didn't%20have%20to%20worry%20about%20money.%0AFigure%20out%20ways%20to%20be%20more%20productive.%20If%20you%20do%20something%20often%20-%20take%20time%20to%20figure%20out%20ways%20to%20do%20it%20faster%20e.g.%20learn%20touch-typing%20if%20you%20have%20to%20type%20a%20lot.%0ALearn%20writing%2C%20speaking%2C%20negotiation%20and%20business%20skills.%0ADo%20the%20right%20thing%2C%20not%20the%20corporate%20thing.">百度翻译</a></st-span> </st-footer> </st-div> <st-div class="__st-btn__" style="display: none; position: fixed; z-index: 99999; left: 0px; top: 0px; transform: translateX(234px) translateY(258px);">译</st-div> </st-div>
+
+<div id="ad-software">
+    Need fast, offline access to 190+ programmer API docs? Try my app <a href="https://www.documentalist.io/like-dash-for-windows.html" target="_blank">Documentalist for Windows</a>
+</div>
+
+
+
+
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-194516-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-194516-1');
+</script>
+
+
+
+
+
+</body></html>
