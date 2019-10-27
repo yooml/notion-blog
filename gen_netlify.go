@@ -178,6 +178,7 @@ func buildTags(articles []*Article) []*TagInfo {
 		tags = append(tags, tag)
 	}
 	sort.Strings(tags)
+	log.Println("tags",tags)
 	for _, tag := range tags {
 		count := tagCounts[tag]
 		ti = &TagInfo{
@@ -481,8 +482,8 @@ func netlifyBuild(store *Articles,d *caching_downloader.Downloader) {
 
 	genChangelog(store, nil)
 
-	genAtom(store, nil)
-	genAtomAll(store, nil)
+	//genAtom(store, nil)
+	//genAtomAll(store, nil)
 
 	{
 		// /blog/ and /kb/ are only for redirects, we only handle /article/ at this point

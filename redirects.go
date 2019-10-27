@@ -710,8 +710,13 @@ rewrite "%s" {
 }
 `, base, to)
 		}
-		return fmt.Sprintf(`
+		/*return fmt.Sprintf(`
 rewrite "^%s$" {
+    to %s
+}
+`, r.from, r.to)*/
+		return fmt.Sprintf(`
+rewrite %s {
     to %s
 }
 `, r.from, r.to)

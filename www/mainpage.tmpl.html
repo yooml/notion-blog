@@ -52,8 +52,8 @@
 
 
 
-      <div class="book-list-headline" style="margin-top: 2em;">
-      </div>
+      <!--div class="book-list-headline" style="margin-top: 2em;">
+      </div-->
 
       <div class="articles-list-wrap flex-col">
         <div>
@@ -67,16 +67,13 @@
             {{ end }}
           </div>
           {{ end }}
-          <div
+          <!--div
             style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;"
           >
             <div>
-              <a href="/archives.html">See all...</a>
+              <a href="/archives.html">tag分类</a>
             </div>
-            <div class="headline" style="font-size:80%">
-              <a href="/atom.xml">RSS/Atom feed</a>
-            </div>
-          </div>
+          </div-->
 
           <hr />
           <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;">
@@ -90,11 +87,20 @@
           <center>
             <b>notion</b>
           </center>
-          <center>
+          <!--center>
             <a style="font-size: 85%; margin-top: -6px" href="/changelog.html"
-              >笔记改动历史</a
-            >
-          </center>
+              >改动历史</a>
+          </center-->
+          <div style="display:flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <div>
+              <a style="font-size: 85%; margin-top: -6px" href="/changelog.html"
+              >改动历史</a>
+            </div>
+          <div>
+            <a href="/archives.html">tag分类</a>
+          </div>
+          </div>
+
           <div style="margin-top: 1em">
             {{.WebsiteHTML}}
           </div>

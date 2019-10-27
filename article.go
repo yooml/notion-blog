@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"html/template"
-	"log"
 	"path/filepath"
 	"strconv"
 	"strings"
@@ -538,7 +537,7 @@ func notionPageToArticle(c *notionapi.Client, page *notionapi.Page) *Article {
 	//fmt.Printf("extractMetadata: %s-%s, %d blocks\n", title, id, len(blocks))
 	// metadata blocks are always at the beginning. They are TypeText blocks and
 	// have only one plain string as content
-	log.Println("page.BlockRecords:",page,page.CollectionViewRecords)
+	//log.Println("page.BlockRecords:",page,page.CollectionViewRecords)
 	root := page.Root()
 	title := root.Title
 	id := normalizeID(root.ID)
