@@ -6,7 +6,6 @@ import (
 	"html/template"
 	"io"
 	"io/ioutil"
-	"log"
 	"math/rand"
 	"net/url"
 	"os"
@@ -32,7 +31,7 @@ func addAllRedirects(store *Articles) {
 	//netflifyAddTempRedirect("/book/*", "/article/:splat")
 	netflifyAddTempRedirect("/software/sumatrapdf*", "https://www.sumatrapdfreader.org/:splat")
 
-	netflifyAddTempRedirect("/articles/", "/documents.html")
+	//netflifyAddTempRedirect("/articles/", "/documents.html")
 	netflifyAddTempRedirect("/articles/index.html", "/documents.html")
 	netflifyAddTempRedirect("/static/documents.html", "/documents.html")
 	netflifyAddTempRedirect("/software/index.html", "/software/")
@@ -154,11 +153,12 @@ var (
 	allTags []*TagInfo
 )
 
-func buildTags(articles []*Article) []*TagInfo {
+func buildTags(store *Articles) []*TagInfo {
 	if allTags != nil {
 		return allTags
 	}
 
+	articles:=store.articles
 	var res []*TagInfo
 	ti := &TagInfo{
 		URL:   "/archives.html",
@@ -178,7 +178,6 @@ func buildTags(articles []*Article) []*TagInfo {
 		tags = append(tags, tag)
 	}
 	sort.Strings(tags)
-	log.Println("tags",tags)
 	for _, tag := range tags {
 		count := tagCounts[tag]
 		ti = &TagInfo{
@@ -223,7 +222,7 @@ func netlifyWriteArticlesArchiveForTag(store *Articles, tag string, w io.Writer)
 		PostsCount:    len(articles),
 		Years:         buildYearsFromArticles(articles),
 		Tag:           tag,
-		Tags:          buildTags(articles),
+		Tags:          buildTags(store),
 	}
 
 	return execTemplate(path, tmplArchive, model, w)
@@ -295,7 +294,7 @@ func genChangelog(store *Articles, w io.Writer) error {
 	return execTemplate("/changelog.html", tmplChangelog, model, w)
 }
 
-func genPerTagArchives(store *Articles,d *caching_downloader.Downloader) {
+func genPerTagArchives(store *Articles,d *caching_downloader.Downloader)*Articles {
 	// tag/<tagname>
 	tags := map[string]struct{}{}
 	//for _, article := range store.getBlogNotHidden() {
@@ -317,7 +316,7 @@ func genPerTagArchives(store *Articles,d *caching_downloader.Downloader) {
 				}
 			}
 		}
-		log.Println("article.Tags",article.Tags,article.ID)
+		//log.Println("article.Tags",article.Tags,article.ID)
 		//if article.Tags==nil
 		for _, tag := range article.Tags {
 			tags[tag] = struct{}{}
@@ -326,6 +325,7 @@ func genPerTagArchives(store *Articles,d *caching_downloader.Downloader) {
 	for tag := range tags {
 		netlifyWriteArticlesArchiveForTag(store, tag, nil)
 	}
+	return store
 }
 
 func genArchives(store *Articles, w io.Writer) error {
@@ -492,9 +492,8 @@ func netlifyBuild(store *Articles,d *caching_downloader.Downloader) {
 			genArticle(article, nil)
 		}
 	}
-
-	genArchives(store, nil)
-	genPerTagArchives(store,d)
+	articles:=genPerTagArchives(store,d)
+	genArchives(articles, nil)
 
 	genSitemap(store, nil)
 

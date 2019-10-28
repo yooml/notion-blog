@@ -58,7 +58,6 @@ rewrite "/software/sumatrapdf" {
     regexp (.*)
     to https://www.sumatrapdfreader.org/{1}
 }
-redir "/articles/" "/documents.html" 302
 redir "/articles/index.html" "/documents.html" 302
 redir "/static/documents.html" "/documents.html" 302
 redir "/software/index.html" "/software/" 302
@@ -71,8 +70,16 @@ rewrite /articles/go-cookbook.html {
     to /book/go-cookbook.html
 }
 
+rewrite /tag/notion {
+    to /article/archives-by-tag-notion.html
+}
+
 rewrite /tag/2019.10 {
     to /article/archives-by-tag-2019.10.html
+}
+
+rewrite /tag/Important {
+    to /article/archives-by-tag-important.html
 }
 
 rewrite /tag/go {
@@ -81,14 +88,6 @@ rewrite /tag/go {
 
 rewrite /tag/youdao {
     to /article/archives-by-tag-youdao.html
-}
-
-rewrite /tag/notion {
-    to /article/archives-by-tag-notion.html
-}
-
-rewrite /tag/Important {
-    to /article/archives-by-tag-important.html
 }
 
 rewrite /tag/ss {

@@ -247,9 +247,7 @@ func filterArticlesByTag(articles []*Article, tag string, include bool) []*Artic
 	res := make([]*Article, 0)
 	for _, a := range articles {
 		hasTag := false
-		log.Println("======")
 		for _, t := range a.Tags {
-			log.Println("---------t:",t)
 			if tag == t {
 				hasTag = true
 				break
