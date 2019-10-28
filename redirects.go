@@ -675,7 +675,17 @@ func netlifyWriteRedirects() {
 
 // https://caddyserver.com/tutorial/caddyfile
 // redirect /article/:id/* => /article/:id/pretty-title
-var caddyProlog = `localhost:8080
+var caddyProlog = `http://www.minazuki.cn https://www.minazuki.cn {
+tls /etc/letsencrypt/live/www.minazuki.cn/cert.pem /etc/letsencrypt/live/www.minazuki.cn/privkey.pem
+gzip
+        proxy / http://127.0.0.1:8080 {
+                header_upstream Host {host}
+                header_upstream X-Real-IP {remote}
+                header_upstream X-Forwarded-For {remote}
+                header_upstream X-Forwarded-Proto {scheme}
+        }
+}
+0.0.0.0:8080
 root netlify_static
 errors stdout
 log stdout

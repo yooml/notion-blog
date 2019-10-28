@@ -1,4 +1,14 @@
-localhost:8080
+http://www.minazuki.cn https://www.minazuki.cn {
+tls /etc/letsencrypt/live/www.minazuki.cn/cert.pem /etc/letsencrypt/live/www.minazuki.cn/privkey.pem
+gzip
+        proxy / http://127.0.0.1:8080 {
+                header_upstream Host {host}
+                header_upstream X-Real-IP {remote}
+                header_upstream X-Forwarded-For {remote}
+                header_upstream X-Forwarded-Proto {scheme}
+        }
+}
+0.0.0.0:8080
 root netlify_static
 errors stdout
 log stdout
@@ -70,10 +80,6 @@ rewrite /articles/go-cookbook.html {
     to /book/go-cookbook.html
 }
 
-rewrite /tag/youdao {
-    to /article/archives-by-tag-youdao.html
-}
-
 rewrite /tag/Important {
     to /article/archives-by-tag-important.html
 }
@@ -82,12 +88,12 @@ rewrite /tag/ss {
     to /article/archives-by-tag-ss.html
 }
 
-rewrite /tag/notion {
-    to /article/archives-by-tag-notion.html
-}
-
 rewrite /tag/2019.10 {
     to /article/archives-by-tag-2019.10.html
+}
+
+rewrite /tag/youdao {
+    to /article/archives-by-tag-youdao.html
 }
 
 rewrite /tag/go {
