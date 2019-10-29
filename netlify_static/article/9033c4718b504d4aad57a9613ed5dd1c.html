@@ -146,7 +146,7 @@
             
 
             <div>
-                <p></p><div class="notion-page" id="9033c471-8b50-4d4a-ad57-a9613ed5dd1c"><div class="notion-text">loadarticle方法只下载了page，而page对象没有tag所以article.Tags为空的问题，解决办法：</div><div class="notion-text">1.通过GetBlockRecords去获取tag（网络请求）</div><div class="notion-text">2.本地notion_cache的文件中去获取tag</div><div class="notion-text">notionapi/caching_downloader暂没有现成的取tag的方法，所以暂时先尝试第一种</div></div>
+                <p></p><div class="notion-page" id="9033c471-8b50-4d4a-ad57-a9613ed5dd1c"><div class="notion-text">loadarticle方法只下载了page，而page对象没有tag所以article.Tags为空的问题，解决办法：</div><div class="notion-text">1.通过GetBlockRecords去获取tag（网络请求）</div><div class="notion-text">2.本地notion_cache的文件中去获取tag</div><div class="notion-text">notionapi/caching_downloader暂没有现成的取tag的方法，所以暂时使用了第一种</div></div>
             </div>
 
             <div class="article-meta">

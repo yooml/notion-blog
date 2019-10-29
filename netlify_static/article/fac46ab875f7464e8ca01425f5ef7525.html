@@ -149,7 +149,20 @@
                 <p></p><div class="notion-page" id="fac46ab8-75f7-464e-8ca0-1425f5ef7525"><div class="notion-text">需要添加博客显示整个collection_view_page的功能</div><div class="notion-text">kjk/blog暂时没有这个功能</div><div class="page" id="99827ae97b9540dd97e15f384c668f75">
 <a href="/article/99827ae97b9540dd97e15f384c668f75.html">首先接口</a>
 </div>
-<div class="notion-text"></div><div class="notion-text">genPerTagArchives</div></div>
+<div class="notion-text">查看文档发现有封装了官方api/v3/queryCollection接口的方法Client.QueryCollection于是：</div><pre class="chroma"><span class="kd">var</span> <span class="nx">user</span> <span class="o">*</span><span class="nx">notionapi</span><span class="p">.</span><span class="nx">User</span> <span class="p">=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">notionapi</span><span class="p">.</span><span class="nx">User</span><span class="p">)</span>
+			<span class="nx">user</span><span class="p">.</span><span class="nx">Locale</span> <span class="p">=</span> <span class="s">&#34;zh-cn&#34;</span>
+			<span class="nx">user</span><span class="p">.</span><span class="nx">TimeZone</span> <span class="p">=</span> <span class="s">&#34;Asia/Shanghai&#34;</span>
+			<span class="kd">var</span> <span class="nx">query</span> <span class="o">*</span><span class="nx">notionapi</span><span class="p">.</span><span class="nx">Query</span> <span class="p">=</span> <span class="nb">new</span><span class="p">(</span><span class="nx">notionapi</span><span class="p">.</span><span class="nx">Query</span><span class="p">)</span>
+			<span class="nx">query</span><span class="p">.</span><span class="nx">Filter</span> <span class="p">=</span> <span class="nx">fliters</span>
+			<span class="c1">//query.CalendarBy=&#34;(WIG&#34;
+</span><span class="c1"></span>			<span class="nx">query</span><span class="p">.</span><span class="nx">FilterOperator</span> <span class="p">=</span> <span class="s">&#34;and&#34;</span>
+			<span class="nx">coll</span><span class="p">,</span> <span class="nx">_</span> <span class="o">:=</span> <span class="nx">d</span><span class="p">.</span><span class="nx">Client</span><span class="p">.</span><span class="nf">QueryCollection</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">Block</span><span class="p">.</span><span class="nx">CollectionID</span><span class="p">,</span> <span class="nx">e</span><span class="p">,</span> <span class="nx">query</span><span class="p">,</span> <span class="nx">user</span><span class="p">)</span>
+
+			<span class="k">for</span> <span class="nx">_</span><span class="p">,</span> <span class="nx">g</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">coll</span><span class="p">.</span><span class="nx">RecordMap</span><span class="p">.</span><span class="nx">CollectionViews</span> <span class="p">{</span>
+				<span class="kd">var</span> <span class="nx">bb</span> <span class="nx">CollectionView</span>
+				<span class="nx">json</span><span class="p">.</span><span class="nf">Unmarshal</span><span class="p">([]</span><span class="nb">byte</span><span class="p">(</span><span class="nx">g</span><span class="p">.</span><span class="nx">Value</span><span class="p">),</span> <span class="o">&amp;</span><span class="nx">bb</span><span class="p">)</span>
+				<span class="nx">pages</span><span class="p">=</span><span class="nb">append</span><span class="p">(</span><span class="nx">pages</span><span class="p">,</span><span class="nx">bb</span><span class="p">.</span><span class="nx">Page_sort</span><span class="o">...</span><span class="p">)</span>
+			<span class="p">}</span></pre><div class="notion-text">获取page成功</div></div>
             </div>
 
             <div class="article-meta">

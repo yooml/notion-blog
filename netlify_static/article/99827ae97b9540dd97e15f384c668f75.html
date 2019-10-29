@@ -147,19 +147,48 @@
             
 
             <div>
-                <p></p><div class="notion-page" id="99827ae9-7b95-40dd-97e1-5f384c668f75"><div class="notion-text"><a class="notion-link" href="https://www.notion.so/api/v3/getRecordValues">https://www.notion.so/api/v3/getRecordValues</a></div><div class="notion-text"></div><pre class="chroma">{
-  &#34;requests&#34;: [
-    {
-      &#34;id&#34;: &#34;cf7b1a37-66ea-499a-90e5-68028152b10a&#34;,
-      &#34;table&#34;: &#34;block&#34;
-    }
-  ]
-}</pre><div class="notion-text"></div><img class="blog-img" src="/img/6bccbc9e63aaf0274d0e623d4f65d4a68f961ea2.png" id="9eff7f8876854589971da0162bc1043c">
-<pre class="chroma">{
-  &#34;requests&#34;: [
-    {&#34;table&#34;:&#34;collection_view&#34;,&#34;id&#34;:&#34;fb872551-6f7e-4e82-847c-279c0ba0a58d&#34;}
-  ]
-}</pre><div class="notion-text"><a class="notion-link" href="https://www.notion.so/api/v3/queryCollection">https://www.notion.so/api/v3/queryCollection</a></div><pre class="chroma">{&#34;collectionId&#34;:&#34;532d1793-ea8e-487f-b7b5-18a20070d1a7&#34;,&#34;collectionViewId&#34;:&#34;fb872551-6f7e-4e82-847c-279c0ba0a58d&#34;,&#34;query&#34;:{&#34;filter&#34;:[{&#34;id&#34;:&#34;f19ce6f4-1431-48e0-8390-766d7beab632&#34;,&#34;type&#34;:&#34;multi_select&#34;,&#34;value&#34;:&#34;2019.10&#34;,&#34;property&#34;:&#34;prop_2&#34;,&#34;comparator&#34;:&#34;enum_contains&#34;}],&#34;calendar_by&#34;:&#34;(WIG&#34;,&#34;filter_operator&#34;:&#34;and&#34;,&#34;sort&#34;:[],&#34;aggregate&#34;:[]},&#34;loader&#34;:{&#34;type&#34;:&#34;table&#34;,&#34;limit&#34;:70,&#34;userTimeZone&#34;:&#34;Asia/Shanghai&#34;,&#34;userLocale&#34;:&#34;zh-cn&#34;,&#34;loadContentCover&#34;:true}}</pre></div>
+                <p></p><div class="notion-page" id="99827ae9-7b95-40dd-97e1-5f384c668f75"><div class="notion-text"><a class="notion-link" href="https://www.notion.so/api/v3/getRecordValues">https://www.notion.so/api/v3/getRecordValues</a></div><div class="notion-text"></div><pre class="chroma"><span class="p">{</span>
+  <span class="nt">&#34;requests&#34;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;cf7b1a37-66ea-499a-90e5-68028152b10a&#34;</span><span class="p">,</span>
+      <span class="nt">&#34;table&#34;</span><span class="p">:</span> <span class="s2">&#34;block&#34;</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span></pre><div class="notion-text"></div><img class="blog-img" src="/img/6bccbc9e63aaf0274d0e623d4f65d4a68f961ea2.png" id="9eff7f8876854589971da0162bc1043c">
+<pre class="chroma"><span class="p">{</span>
+  <span class="nt">&#34;requests&#34;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span><span class="nt">&#34;table&#34;</span><span class="p">:</span><span class="s2">&#34;collection_view&#34;</span><span class="p">,</span><span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;fb872551-6f7e-4e82-847c-279c0ba0a58d&#34;</span><span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span></pre><div class="notion-text"><a class="notion-link" href="https://www.notion.so/api/v3/queryCollection">https://www.notion.so/api/v3/queryCollection</a></div><div class="notion-text">request:</div><pre class="chroma"><span class="p">{</span>
+    <span class="nt">&#34;collectionId&#34;</span><span class="p">:</span><span class="s2">&#34;532d1793-ea8e-487f-b7b5-18a20070d1a7&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;collectionViewId&#34;</span><span class="p">:</span><span class="s2">&#34;fb872551-6f7e-4e82-847c-279c0ba0a58d&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;query&#34;</span><span class="p">:{</span>
+        <span class="nt">&#34;filter&#34;</span><span class="p">:[</span>
+            <span class="p">{</span>
+                <span class="nt">&#34;id&#34;</span><span class="p">:</span><span class="s2">&#34;f19ce6f4-1431-48e0-8390-766d7beab632&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;multi_select&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;value&#34;</span><span class="p">:</span><span class="s2">&#34;2019.10&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;property&#34;</span><span class="p">:</span><span class="s2">&#34;prop_2&#34;</span><span class="p">,</span>
+                <span class="nt">&#34;comparator&#34;</span><span class="p">:</span><span class="s2">&#34;enum_contains&#34;</span>
+            <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&#34;calendar_by&#34;</span><span class="p">:</span><span class="s2">&#34;(WIG&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;filter_operator&#34;</span><span class="p">:</span><span class="s2">&#34;and&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;sort&#34;</span><span class="p">:[</span>
+
+        <span class="p">],</span>
+        <span class="nt">&#34;aggregate&#34;</span><span class="p">:[</span>
+
+        <span class="p">]</span>
+    <span class="p">},</span>
+    <span class="nt">&#34;loader&#34;</span><span class="p">:{</span>
+        <span class="nt">&#34;type&#34;</span><span class="p">:</span><span class="s2">&#34;table&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;limit&#34;</span><span class="p">:</span><span class="mi">70</span><span class="p">,</span>
+        <span class="nt">&#34;userTimeZone&#34;</span><span class="p">:</span><span class="s2">&#34;Asia/Shanghai&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;userLocale&#34;</span><span class="p">:</span><span class="s2">&#34;zh-cn&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;loadContentCover&#34;</span><span class="p">:</span><span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">}</span></pre></div>
             </div>
 
             <div class="article-meta">

@@ -240,7 +240,8 @@ func copyImages() {
 
 func genIndex(store *Articles, w io.Writer) error {
 	// /
-	articles := store.getBlogNotHidden()
+	//articles := store.getBlogNotHidden()
+	articles := store.articles
 	if len(articles) > 5 {
 		articles = articles[:5]
 	}

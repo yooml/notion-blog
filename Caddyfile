@@ -80,16 +80,12 @@ rewrite /articles/go-cookbook.html {
     to /book/go-cookbook.html
 }
 
-rewrite /tag/Important {
-    to /article/archives-by-tag-important.html
-}
-
-rewrite /tag/ss {
-    to /article/archives-by-tag-ss.html
-}
-
 rewrite /tag/2019.10 {
     to /article/archives-by-tag-2019.10.html
+}
+
+rewrite /tag/Important {
+    to /article/archives-by-tag-important.html
 }
 
 rewrite /tag/youdao {
@@ -98,6 +94,14 @@ rewrite /tag/youdao {
 
 rewrite /tag/go {
     to /article/archives-by-tag-go.html
+}
+
+rewrite /tag/notion {
+    to /article/archives-by-tag-notion.html
+}
+
+rewrite /tag/ss {
+    to /article/archives-by-tag-ss.html
 }
 
 rewrite /tools/generate-unique-id {
