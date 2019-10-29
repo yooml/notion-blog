@@ -47,10 +47,10 @@
 /software/index.html	/software/	302
 /articles/go-cookbook.html	/book/go-cookbook.html	200
 /articles/go-cookbook.html	/book/go-cookbook.html	200
-/tag/2019.10	/article/archives-by-tag-2019.10.html	200
 /tag/Important	/article/archives-by-tag-important.html	200
-/tag/youdao	/article/archives-by-tag-youdao.html	200
 /tag/go	/article/archives-by-tag-go.html	200
-/tag/notion	/article/archives-by-tag-notion.html	200
 /tag/ss	/article/archives-by-tag-ss.html	200
+/tag/youdao	/article/archives-by-tag-youdao.html	200
+/tag/notion	/article/archives-by-tag-notion.html	200
+/tag/2019.10	/article/archives-by-tag-2019.10.html	200
 /tools/generate-unique-id	/tools/generate-unique-id.html	200

@@ -241,7 +241,13 @@ func copyImages() {
 func genIndex(store *Articles, w io.Writer) error {
 	// /
 	//articles := store.getBlogNotHidden()
-	articles := store.articles
+	//articles := store.articles
+	articles := append([]*Article{}, store.articles...)
+	sort.Slice(articles, func(i, j int) bool {
+		a1 := articles[i]
+		a2 := articles[j]
+		return a1.UpdatedOn.After(a2.UpdatedOn)
+	})  //articles从新到旧排序
 	if len(articles) > 5 {
 		articles = articles[:5]
 	}
