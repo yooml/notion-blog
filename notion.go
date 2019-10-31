@@ -1,6 +1,7 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 	"github.com/kjk/notionapi"
 	"github.com/kjk/notionapi/caching_downloader"
@@ -15,6 +16,7 @@ import (
 var (
 	nDownloadedPage = 0
 	flgNoCache          bool
+	flgClear            bool
 )
 var (
 	analyticsCode = "UA-194516-1"
@@ -135,6 +137,12 @@ func main()  {
 		}
 		log.Println("panic检测结束")
 	}()*/
+	{
+		flag.BoolVar(&flgNoCache, "no-cache", false, "if true, disables cache for downloading notion pages")
+		flag.BoolVar(&flgClear, "clear", false, "整理同步notion_cache")
+		flag.Parse()
+	}
+
 	os.MkdirAll("netlify_static", 0755)
 
 	client := &notionapi.Client{}
@@ -163,7 +171,10 @@ func main()  {
 	d.EventObserver = eventObserver
 	d.RedownloadNewerVersions = true
 	d.NoReadCache = flgNoCache
-
+	if flgClear {
+		clear(d)
+		return
+	}
 	rebuildAll(d)
 }
 
